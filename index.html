@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <html>
 
   <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     body {
@@ -23,17 +23,22 @@
     }
 
     .topnav {
-    overflow: hidden;
-    background-color: #222;
+      overflow: hidden;
+      background-color: #222;
+    }
+
+    .locked {
+      position: fixed;
+      top: 0;
     }
 
     .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
     }
 
     .topnav-right {
@@ -41,15 +46,28 @@
     }
 
     .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+      background-color: #ddd;
+      color: black;
     }
 
     .topnav a.active {
-    background-color: #FF7F27;
-    color: white;
+      background-color: #FF7F27;
+      color: white;
     }
     </style>
+
+    <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > ($(window).width() * 0.1328125)) {
+          $("#myTopnav").addClass("locked");
+        } else {
+          $("#myTopnav").removeClass("locked");
+        }
+      });
+    });
+    </script>
+
   </head>
 
   <img id="banner-image" src="banner.png" alt="banner-image" width=100% border="0" style="display:block;"/>
@@ -65,7 +83,6 @@
 
 
 
-
   <body style="background-color:#AAAAAA">
     <h1>NHN Landing Page</h1>
     <p>This is being hosted with GitHub Pages. It is still under development</p>
@@ -73,6 +90,34 @@
     <h2>LMD: <a href="lmd.html">Launch My Dog</a></h2>
     <p>This link should bring you to the Launch My Dog Page</p>
 
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
+    <P>nerdherdnetwork.github.io</p>
 
 
   </body>
