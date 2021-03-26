@@ -12,6 +12,16 @@
     font-family: Arial, Helvetica, sans-serif;
     }
 
+    .banner-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner.png");
+      width: 100%;
+      height: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
     .topnav {
     overflow: hidden;
     background-color: #222;
@@ -41,12 +51,12 @@
     }
     </style>
   </head>
-  
+
+  <img id="banner-image" src="banner.png" alt="banner-image" width=100% border="0" style="display:block;"/>
   <div class="topnav" id="myTopnav">
     <a href="index.html" class="active">Home</a>
     <a href="lmd.html">Launch My Dog</a>
     <a href="pmb.html">Poke My Balls</a>
-
     <div class="topnav-right">
       <a href="privacy.html">Privacy</a>
       <a href="about.html">About</a>
