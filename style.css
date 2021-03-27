@@ -104,6 +104,12 @@ body {
   background-color: #FF7F27;
   color: white;
 }
+@media screen and (max-width: 550px) {
+  .navbar a.icon {
+      float: right;
+      display: block;
+  }
+}
 
 
 /* Footer */
