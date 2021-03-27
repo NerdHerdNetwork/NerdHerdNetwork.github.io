@@ -13,28 +13,36 @@
     <!-- Banner Image -->
     <img id="banner-image" src="banner.png" alt="banner-image" width=100% border="0" style="display:block;"/>
     <!-- Desktop Navigation Bar -->
-    <div class="topnav" id="desktopNav">
+    <div class="topnav" id="myTopnav">
       <a href="index.html" class="active">Home</a>
       <a href="lmd.html">Launch My Dog</a>
       <a href="pmb.html">Poke My Balls</a>
-      <div class="topnav-right">
+      <div class="topnav-right" id="rightNav">
         <a href="privacy.html">Privacy</a>
         <a href="about.html">About</a>
       </div>
-    </div>
-    <!-- Mobile Navigation Bar -->
-    <div class="navbar" id="mobilenav">
-      <!-- Home Page Link -->
-      <a href="index.html">Nerd Herd Network</a>
-      <!-- hamburger menu -->
-      <div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+  var x = document.getElementById("rightNav");
+  if (x.className === "topnav-right") {
+    x.className = "topnav responsive";
+  } else {
+    x.className = "topnav-right";
+  }
+}
+</script>
 
 
     <!-- Page Content -->
