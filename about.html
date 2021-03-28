@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<title>About - Nerd Herd Network</title>
 
-  </head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="sticky-navigation.css" rel="stylesheet" type="text/css" />
+	<style>
+	body {
+		min-height: 2000px;
+		padding-top: 70px;
+	}
+	</style>
 
-  <body style="background-color:#AAAAAA">
-    <!-- Banner Image -->
-    <img id="banner-image" src="banner.png" alt="banner-image" width=100% border="0" style="display:block;"/>
-    <!-- Desktop Navigation Bar -->
-    <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active">Home</a>
-      <a href="lmd.html">Launch My Dog</a>
-      <a href="pmb.html">Poke My Balls</a>
-      <div class="topnav-right" id="rightNav">
-        <a href="privacy.html">Privacy</a>
-        <a href="about.html">About</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript" ></script>
+
+</head>
+<body style="background-color: #AAA">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+  	<div class="navbar-header">
+  	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  		<span class="sr-only">Toggle navigation</span>
+  		<span class="icon-bar"></span>
+  		<span class="icon-bar"></span>
+  		<span class="icon-bar"></span>
+  	  </button>
+  	  <a class="navbar-brand" href="index.html">
+  		 <img src="images/logo.png" alt="Logo NHN">
+  	  </a>
+  	</div>
+  	<div id="navbar" class="navbar-collapse collapse navbar-right">
+  	  <ul class="nav navbar-nav">
+  		<li><a href="lmd.html">launch My Dog</a></li>
+  		<li><a href="pmb.html">Poke My Balls</a></li>
+  		<li class="dropdown">
+  		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Projects <span class="caret"></span></a>
+  		  <ul class="dropdown-menu">
+  			<li><a href="_o_csgo.html">CSGO Prop</a></li>
+  		  </ul>
+  		</li>
+  		<li class="dropdown">
+  		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+  		  <ul class="dropdown-menu">
+  			<li><a href="about.html">Nerd Herd Network</a></li>
+  			<li><a href="privacy.html">Privacy Policy</a></li>
+  			<li role="separator" class="divider"></li>
+  			<li class="dropdown-header">People</li>
+  			<li><a href="_p_frank.html">Frank (Weekie)</a></li>
+  			<li><a href="_p_jake.html">Jake (Hex)</a></li>
+  		  </ul>
+  		</li>
+  		<li><a href="contact.html">Contact</a></li>
+  	  </ul>
+  	</div><!--/.nav-collapse -->
     </div>
+  </nav>
 
+<div class="container">
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-  var x = document.getElementById("rightNav");
-  if (x.className === "topnav-right") {
-    x.className = "topnav responsive";
-  } else {
-    x.className = "topnav-right";
-  }
-}
-</script>
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="jumbotron">
+	<h1>Nerd Herd Network</h1>
+	<p>This is the general information page for the network</p>
+	<p>It will have a description, member list, what our goals are, what we work on, and how to contact us</p>
+  </div>
 
+</div> <!-- /container -->
 
-
-  <body style="background-color:#AAAAAA">
-    <h1>About</h1>
-    <p style="padding-bottom:2000px">This makes sure that multiple pages work</p>
-  </body>
+</body>
 </html>
