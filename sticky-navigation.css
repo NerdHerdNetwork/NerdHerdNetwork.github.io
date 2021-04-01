@@ -83,3 +83,14 @@
 	width:100%;
 	height:100%;
 }
+
+.applink {
+  height: auto;
+}
+
+@media screen and (max-width:768px) {
+  .applink {
+    float: none;
+    height: auto;
+  }
+}
