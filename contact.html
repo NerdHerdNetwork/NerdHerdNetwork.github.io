@@ -58,8 +58,14 @@
   <!-- Main component for a primary marketing message or call to action -->
   <div class="jumbotron">
 	<h1>Contact</h1>
-	<p>This will hold the Contact form(s)</p>
-	<p>probably a way to email, like devoncrawford.io</p>
+	<h2>Send e-mail to us:</h2>
+	<form class="contact-form" action="contact-form.php" method="post">
+		<input type="text" name="name" placeholder="Your Name">
+		<input type="text" name="email" placeholder="Your E-Mail">
+		<input type="text" name="subject" placeholder="Subject">
+		<textarea name="message" rows="8" cols="80" placeholder="Type a message..."></textarea>
+		<button type="submit" name="submit">Send Email</button>
+	</form>
   </div>
 
 </div> <!-- /container -->
