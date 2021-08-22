@@ -1,0 +1,54 @@
+main:
+  - title: "Launch My Dog"
+    url: /launch-my-dog/
+  - title: "Poke My Balls"
+    url: /poke-my-balls/
+  - title: "Projects"
+    url: /projects/
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+
+about:
+  - title: Nerd Herd Network
+    children:
+      - title: "About"
+        url: /about/
+      - title: "Privacy Policy"
+        url: /about/privacy/
+
+  - title: Nerd Herd Members
+    children:
+      - title: "Frank (Weekie)"
+        url: /about/frank/
+      - title: "Jake (Hex)"
+        url: /about/jake/
+
+projects:
+  - title: "Projects"
+    children:
+      - title: "Overview"
+        url: /projects/
+  - title: Games
+    children:
+      - title: "Castle Wars"
+        url: /projects/castle-wars/
+      - title: "Launch My Dog"
+        url: /projects/launch-my-dog/
+      - title: "Poke My Balls"
+        url: /projects/poke-my-balls/
+
+  - title: Physical Programming
+    children:
+      - title: "CSGO Prop"
+        url: /projects/csgo-prop/
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mmistakes"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
