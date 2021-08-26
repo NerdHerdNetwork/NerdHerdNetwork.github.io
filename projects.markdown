@@ -32,7 +32,7 @@ Launch My Dog officially started development in early 2020, and was release July
 
 ## Poke My Balls
 
-![Screenshot-game-right](/assets/images/poke-my-balls/screen-game.png){: .align-right height="30%" width="30%"}
+![Screenshot-game-right](/assets/images/poke-my-balls/screen-game.PNG){: .align-right height="30%" width="30%"}
 Poke my Balls is a fun, simple, and addicting game, for the time when you have a couple of minutes to take you mind off of life. If you can tap your screen you can play Poke My Balls! Colored balls drop from the top of the screen, tap all of the right color. Black balls, Blue balls, Green balls, and Red balls too, They all drop into view. If you prefer blue, then tap the blue. Compete with your friends for the highest score. More balls drop the longer you play.
 
 [**Check it out**](/projects/poke-my-balls/){: .btn .btn--info}

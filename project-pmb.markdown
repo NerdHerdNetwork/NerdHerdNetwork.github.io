@@ -7,20 +7,20 @@ sidebar:
 share: true
 
 gallery:
-  - url: /assets/images/poke-my-balls/screen-main.png
-    image_path: /assets/images/poke-my-balls/screen-main.png
+  - url: /assets/images/poke-my-balls/screen-main.PNG
+    image_path: /assets/images/poke-my-balls/screen-main.PNG
     alt: "PMB Menu"
     title: "Poke My Balls menu"
-  - url: /assets/images/poke-my-balls/screen-game.png
-    image_path: /assets/images/poke-my-balls/screen-game.png
+  - url: /assets/images/poke-my-balls/screen-game.PNG
+    image_path: /assets/images/poke-my-balls/screen-game.PNG
     alt: "PMB Game"
     title: "Poke My Balls in-game"
-  - url: /assets/images/poke-my-balls/screen-shop.png
-    image_path: /assets/images/poke-my-balls/screen-shop.png
+  - url: /assets/images/poke-my-balls/screen-shop.PNG
+    image_path: /assets/images/poke-my-balls/screen-shop.PNG
     alt: "PMB Shop"
     title: "Poke My Balls shop"
-  - url: /assets/images/poke-my-balls/screen-blue.png
-    image_path: /assets/images/poke-my-balls/screen-blue.png
+  - url: /assets/images/poke-my-balls/screen-blue.PNG
+    image_path: /assets/images/poke-my-balls/screen-blue.PNG
     alt: "PMB Menu Blue"
     title: "Poke My Balls menu with blue background active"
 ---
@@ -38,10 +38,10 @@ Poke My Balls is an iOS and Android arcade game. Colored balls fall down, and yo
 {% include gallery layout="half" %}
 
 ## Development Process
-![Screenshot-menu-left](/assets/images/poke-my-balls/screen-main.png){: .align-left height="30%" width="30%"}
+![Screenshot-menu-left](/assets/images/poke-my-balls/screen-main.PNG){: .align-left height="30%" width="30%"}
 I started development on Poke My Balls in summer of 2016. I wanted to make the next Flappy Bird, and this game was an idea I had floating around in my head for about a year. I toyed with prototypes in Unity, and one in BuildBox. I settled on Unity because BuildBox did not allow any upwards mobility when it comes to game scope or programming ability. Unity did. I started working and built most of the game in a couple days. I wrote the entire project in JavaScript, as that was all I knew. I had only been programming for a year at this point. The game released on iOS on August 22nd, 2016, and a few weeks later on Android. I released a few updates in the following months, adding a colorblind mode, more settings, and fixing bugs.
 
-![Screenshot-game-right](/assets/images/poke-my-balls/screen-game.png){: .align-right height="30%" width="30%"}
+![Screenshot-game-right](/assets/images/poke-my-balls/screen-game.PNG){: .align-right height="30%" width="30%"}
 A year later, I had become a more experienced programmer. For the first time, I did what I tend to do nowadays, which is to come back to a project after learning more, and applying what I've learned. I wanted to overhaul the game. I had learned C# over the past year. I used C# and added 2 more game modes: Power Poking and Living by Poking. Power poking had falling powerups that added depth to the game. Living by Poking allowed to play to use 3 lives to get as far as possible. I avoided editing as much of the JavaScript as possible, the JavaScript was messy, overwritten, and generally bad code. I also added In-App Purchasing to hopefully obtain some revenue.
 
 Over the next year, I toyed with more game mode ideas, and wanted to release another update. To do this, I needed a new version of unity to support iOS and Android improvements. Unfortunately, I had hit the limit with JavaScript. Unity deprecated it in the version I needed to use. This meant I would have to overhaul to entire basic codebase and rewrite all of it in C#. It was basically starting from scratch. This was a roadblock for me. I didn't want to commit time to project with no active players, even if an update could bring in some new users.
