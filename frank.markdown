@@ -8,8 +8,11 @@ sidebar:
 ![image-right](/assets/images/frank.jpg){: .align-right height="50%" width="50%"}
 My Name is Frank Podraza, I go by Weekie on [**YouTube**](https://www.youtube.com/channel/UCqR1s3Jy4bRMN9c5XGLuLOQ){:target="_blank"}, [**Instagram**](https://www.instagram.com/weekie_nhn/){:target="_blank"}, [**Twitter**](https://twitter.com/Weekie_NHN){:target="_blank"}, and pretty much any social media I'm on. I created the [**Nerd Herd Network**](/about/){:target="_blank"}, I run the Nerd Herd YouTube Channel and this website.
 
-I like to make games. I developed [**Poke My Balls**](/poke-my-balls/){:target="_blank"} back in 2016, the [**CSGO Prop**](/projects/csgo-prop/){:target="_blank"} in 2019, and I just released [**Launch My Dog**](/launch-my-dog/){:target="_blank"} in July of 2021. I am a student at the University of California Santa Cruz. I am studying computer science. 
+I like to make games. I developed [**Poke My Balls**](/poke-my-balls/){:target="_blank"} back in 2016, the [**CSGO Prop**](/projects/csgo-prop/){:target="_blank"} in 2019, and I just released [**Launch My Dog**](/launch-my-dog/){:target="_blank"} in July of 2021. I am a student at the University of California Santa Cruz. I am studying computer science.
 
+I also have a website-based portfolio for you to feast your eyes on.
+
+[**Check it out**](https://frankpodraza.net/){:target="_blank" .btn .btn--info}
 
 ## Poke My Balls
 
