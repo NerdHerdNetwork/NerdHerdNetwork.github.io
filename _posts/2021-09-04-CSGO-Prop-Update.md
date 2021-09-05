@@ -3,6 +3,8 @@ layout: single
 title:  "CSGO Prop Update"
 author_profile: true
 author: Frank
+show_date: true
+
 ---
 
 _By Frank "Weekie" Podraza_
