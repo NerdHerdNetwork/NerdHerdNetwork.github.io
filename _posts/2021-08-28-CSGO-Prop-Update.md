@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Website 2.0 Video"
+title:  "CSGO Prop Update"
 author_profile: true
 author: Frank
 ---
