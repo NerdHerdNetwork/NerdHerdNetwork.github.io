@@ -3,6 +3,8 @@ main:
     url: /launch-my-dog/
   - title: "Poke My Balls"
     url: /poke-my-balls/
+  - title: "Castle Wars"
+    url: /castle-wars/
   - title: "Projects"
     url: /projects/
   - title: "About"
