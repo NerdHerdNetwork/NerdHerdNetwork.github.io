@@ -87,7 +87,7 @@ defaults:
       related: true
 
 collections:
-  Castle-Wars:
+  castle-wars:
     output: true
     permalink: /:collection/:path/
 

@@ -2,8 +2,8 @@
 layout: collection
 title: Castle Wars
 permalink: /castle-wars/
-collection: Castle-Wars
-entries_layout: grid
+collection: castle-wars
+entries_layout: list
 classes: wide
 ---
 
