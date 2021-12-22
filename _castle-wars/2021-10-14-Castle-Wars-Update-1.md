@@ -11,6 +11,8 @@ _By Frank "Weekie" Podraza_
 
 ## Intro / Project Start
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PfAUCvGBT7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
 
 So I recently finished my game, Launch My Dog which is available on mobile. I'd been working on that game for a year and a half, so I had some ideas piled up for new projects. I want to push myself. Poke My Balls was my first released game. Launch My Dog was my second, a small polished experience that I'm incredibly proud of. I figured out where I wanted to go from here.
 
