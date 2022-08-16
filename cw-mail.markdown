@@ -20,5 +20,5 @@ permalink: /castle-wars/mail/
 </script>
 
 <div style="text-align: center">
-  <div style="text-align: left" class="sender-form-field" data-sender-form-id="l6vq1eczbmn7od3g5b9"></div>
+  <div style="text-align: center" class="sender-form-field" data-sender-form-id="l6vq1eczbmn7od3g5b9"></div>
 </div>
