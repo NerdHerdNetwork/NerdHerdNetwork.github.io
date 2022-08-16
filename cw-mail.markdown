@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Castle Wars Mailing List
-permalink: /castle-wars/mail
+permalink: /castle-wars/mail/
 ---
 
 <!-- modify this form HTML and place wherever you want your form -->
