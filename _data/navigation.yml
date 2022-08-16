@@ -48,10 +48,10 @@ projects:
 castle-wars-nav:
   - title: "Quick Links"
     children:
-#      - title: "Main Page"
-#          url: /castle-wars/
+      - title: "Main Page"
+        url: /castle-wars/
       - title: "Mailing List"
-          url: /castle-wars/mail/ 
+        url: /castle-wars/mail/ 
   - title: "Early Development"
     children:
       - title: "Sprint 1: Basic Character Controller"
