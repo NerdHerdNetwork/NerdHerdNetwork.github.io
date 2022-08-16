@@ -7,4 +7,6 @@ entries_layout: list
 classes: wide
 ---
 
+[**Join the Mailing List for Updates!**](/castle-wars/mail/){:target="_blank" .btn .btn--info .align-center}
+
 Castle Wars is a prototype game I (Frank Podraza) am currently developing. It is loosely based on the Halo: Reach gamemode of the same name. Here is a collection of blog posts about the project:
