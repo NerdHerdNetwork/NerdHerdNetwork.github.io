@@ -11,6 +11,6 @@ author: Frank
 
 _By Frank "Weekie" Podraza_
 
-This project is currently in development and has a post collection dedicated to it.
+This project is currently in development and has a post collection dedicated to it. When the project is release this page will contain a summary of the whole project.
 
-[**Check Development Progress**](/Castle-Wars/){:target="_blank" .btn .btn--info .align-center}
+[**Check Development Progress**](/castle-wars/){:target="_blank" .btn .btn--info .align-center}
