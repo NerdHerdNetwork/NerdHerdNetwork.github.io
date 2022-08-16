@@ -4,8 +4,6 @@ title: Castle Wars Mailing List
 permalink: /castle-wars/mail/
 ---
 
-<!-- modify this form HTML and place wherever you want your form -->
-
 <script>
   (function (s, e, n, d, er) {
     s['Sender'] = er;
@@ -21,4 +19,6 @@ permalink: /castle-wars/mail/
   sender('6215f978d75773')
 </script>
 
-<div style="text-align: left" class="sender-form-field" data-sender-form-id="l6vq1eczbmn7od3g5b9"></div>
+<div style="text-align: center">
+  <div style="text-align: left" class="sender-form-field" data-sender-form-id="l6vq1eczbmn7od3g5b9"></div>
+</div>
