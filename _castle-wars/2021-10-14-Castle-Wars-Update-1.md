@@ -5,6 +5,8 @@ author_profile: true
 author: Frank
 collection: castle-wars
 permalink: /castle-wars/sprint1/
+sidebar:
+  nav: "castle-wars-nav"
 
 ---
 
