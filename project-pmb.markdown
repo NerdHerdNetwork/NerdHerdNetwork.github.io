@@ -5,6 +5,8 @@ permalink: /projects/poke-my-balls/
 sidebar:
   nav: "projects"
 share: true
+author_profile: true
+author: Frank
 
 gallery:
   - url: /assets/images/poke-my-balls/screen-main.PNG

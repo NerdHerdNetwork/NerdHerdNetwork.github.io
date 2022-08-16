@@ -4,6 +4,8 @@ title: Projects
 permalink: /projects/
 sidebar:
   nav: "projects"
+author_profile: true
+author: Frank
 ---
 
 This is a compilation of all of the projects produced or being produced by the Nerd Herd Network. This page serves as a general overview of each of those projects.

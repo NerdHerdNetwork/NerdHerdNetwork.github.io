@@ -5,6 +5,8 @@ permalink: /projects/launch-my-dog/
 sidebar:
   nav: "projects"
 share: true
+author_profile: true
+author: Frank
 
 gallery:
   - url: /assets/images/launch-my-dog/SE Screenshot 1.png

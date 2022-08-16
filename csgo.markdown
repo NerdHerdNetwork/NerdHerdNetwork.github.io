@@ -5,6 +5,8 @@ permalink: /projects/csgo-prop/
 sidebar:
   nav: "projects"
 share: true
+author_profile: true
+author: Frank
 ---
 
 _By Frank "Weekie" Podraza_
