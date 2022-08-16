@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Castle Wars Mailing List{.align-center}
+title: Castle Wars Mailing List
 permalink: /castle-wars/mail/
 ---
 
