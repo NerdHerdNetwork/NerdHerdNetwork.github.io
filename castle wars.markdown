@@ -5,6 +5,8 @@ permalink: /castle-wars/
 collection: castle-wars
 entries_layout: list
 classes: wide
+sidebar:
+  nav: "castle-wars-nav"
 ---
 
 Castle Wars is a prototype game I (Frank Podraza) am currently developing. It is loosely based on the Halo: Reach gamemode of the same name. 

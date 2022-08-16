@@ -46,6 +46,18 @@ projects:
       - title: "CSGO Prop"
         url: /projects/csgo-prop/
 
+castle-wars-nav:
+  - title: "Early Development"
+    children:
+      - title: "Sprint 1: Basic Character Controller"
+        url: /castle-wars/sprint1/
+      - title: "Sprint 2: Basic Combat, Split Screen"
+        url: /castle-wars/
+  - title: "Mid Development"
+  - title: "Late Development"
+  - title: "Release"
+  - title: "Post Release"
+
 footer:
   links:
     - label: "Twitter"

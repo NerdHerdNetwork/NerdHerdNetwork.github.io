@@ -4,6 +4,7 @@ title:  "Castle Wars Update 1 - Project Goals, Character Controller, FPS Movemen
 author_profile: true
 author: Frank
 collection: castle-wars
+permalink: /castle-wars/sprint1/
 
 ---
 
