@@ -40,7 +40,6 @@ projects:
         url: /projects/launch-my-dog/
       - title: "Poke My Balls"
         url: /projects/poke-my-balls/
-
   - title: Physical Programming
     children:
       - title: "CSGO Prop"
@@ -48,10 +47,11 @@ projects:
 
 castle-wars-nav:
   - title: "Quick Links"
-    - title: "Main Page"
-        url: /castle-wars/
-    - title: "Mailing List"
-        url: /castle-wars/mail/ 
+    children:
+      - title: "Main Page"
+          url: /castle-wars/
+      - title: "Mailing List"
+          url: /castle-wars/mail/ 
   - title: "Early Development"
     children:
       - title: "Sprint 1: Basic Character Controller"
