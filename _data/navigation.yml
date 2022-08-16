@@ -47,6 +47,11 @@ projects:
         url: /projects/csgo-prop/
 
 castle-wars-nav:
+  - title: "Quick Links"
+    - title: "Main Page"
+        url: /castle-wars/
+    - title: "Mailing List"
+        url: /castle-wars/mail/ 
   - title: "Early Development"
     children:
       - title: "Sprint 1: Basic Character Controller"
