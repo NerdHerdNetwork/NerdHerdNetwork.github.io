@@ -5,6 +5,8 @@ permalink: /castle-wars/
 collection: castle-wars
 entries_layout: list
 classes: wide
+author_profile: true
+author: Frank
 sidebar:
   nav: "castle-wars-nav"
 ---

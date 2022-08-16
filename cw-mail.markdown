@@ -2,6 +2,9 @@
 layout: single
 title: Castle Wars Mailing List
 permalink: /castle-wars/mail/
+
+sidebar:
+  nav: "castle-wars-nav"
 ---
 
 <script>
