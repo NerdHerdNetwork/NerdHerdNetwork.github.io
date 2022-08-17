@@ -57,7 +57,7 @@ castle-wars-nav:
       - title: "Sprint 1: Basic Character Controller"
         url: /castle-wars/sprint1/
       - title: "Sprint 2: Basic Combat, Split Screen"
-        url: /castle-wars/
+        url: /castle-wars/sprint2/
   - title: "Mid Development"
   - title: "Late Development"
   - title: "Release"
