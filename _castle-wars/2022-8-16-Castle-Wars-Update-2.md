@@ -10,13 +10,13 @@ sidebar:
 
 _By Frank "Weekie" Podraza_
 
-Okay so I’ve been gone for a while. Each one of these devlogs was supposed to be “2-3 weeks of work” and that was very much not the case. I am currently refactoring the sprints to move most of the non-necessary work (like Sound systems, animation systems, modeling) out of the next couple sprints.
+I’ve been gone for a while. Each one of these DevLogs/Blog Posts was supposed to be “2-3 weeks of work” and that was very much not the case. I am currently refactoring the sprints to move most of the non-necessary work (like sound systems, animation systems, modeling) out of the next couple sprints.
 
-Obviously, this video took way longer than it was supposed to, in case this happens again, the best way to support me is by downloading my two games on iOS and Android: Poke My Balls and Launch My Dog. The former is quite old and not great quality, but Launch My Dog is a much better game, and if you want to beat the whole thing it only takes like two hours.
+Obviously, this sprint took way longer than it was supposed to, in case this happens again, the best way to support me is by downloading my two games on iOS and Android: Poke My Balls and Launch My Dog. The former is quite old and not great quality, but Launch My Dog is a much better game, and if you want to beat the whole thing it only takes like two hours.
 
-Okay so castle wars: more like some classes, and a war happened. For real I took two classes, and each were significantly challenging, so I’m going to be breaking up this video into three chunks, I’ll call them Epochs, separated by the two classes.
+Okay, so Castle Wars: more like I took some classes, and a war started. For real I took two classes, and each were significantly challenging, so I’m going to be breaking up this post into three chunks, I’ll call them Epochs, separated by each of the two classes.
 
-I think I’ve rambled enough…
+# Epoch 1
 
 Epoch one starts in late 2021, like December 18th, or whenever the last devlog was released. I was really excited to keep working. School was out for break, and I had just started binging Gilmore girls. The goal was to build out the second part of the trifecta: weapons. The trifecta is the gameplay loop of movement, weapons, and abilities. 
 
@@ -34,6 +34,8 @@ Now we have a sword, and we have something to hit, how do we hit it? I watched a
 Then Christmas happened, my brother got an oculus quest 2, and I stole it for a few days to play half life alyx. I got so inspired by the holographic UI and city that I started designing swords. There’s going to be 6 or so sword types, and then each type with have variations, aka, forms. One of those forms will be holographic. This is a potential monetization strategy, selling forms, but I think I’d rather put them behind playing the game. The form will just be cosmetic and have no effect on gameplay.
 
 As the holiday break ended, I created a simple FOV effect aggregation system, where each FOV effect is a function parameter, and the FOV is the result of the function, that way we can turn off specific effects, or have them run at the same time, say dashing while sprinting. I also started to use Plastic Source Control, and backup of the game as classes started to ramp up again.
+
+## Epoch 2
 
 So, in the last devlog I mentioned that I was making a Melee combat game because Bungie decided to make the Destiny 2 gunplay smooth as butter, as has spoiled me. Remember Bungie, my game still has swimming and ladders, I’m still winning. Well, they added the glaive, which is a first-person melee weapon, and feels so good I’m going to have some catching up to do, unless one of the developers who worked on the glaive wants a strictly unpaid internship where they build the same thing for me. Also, I will be adding a glaive into the game.
 
@@ -54,6 +56,9 @@ I added a little visor to the player, which is not levelled, looks right out of 
 I had a plan to extremely overcomplicate the death camera system using graphs. When a player dies, it would find the nearest node from a network of nodes in the level, and then traverse to the “death camera position” Which would be fine if the death camera was where the player was going to spawn. I threw this on the back burner as well, which is now getting full, and will keep getting fuller for a while.
 
 By now it was Friday of spring break, I was running out of days. I hastily added a pause menu, which didn’t play well with dying and/or swapping between keyboard and controller. There were a lot of issues with this, and it wasn’t a great spot to leave the project, but I had to leave it. I gave myself a day or so of a break because I knew what class was about to come. 
+
+
+### Epoch 3
 
 I’m a computer science student, which means I have crippling imposter syndrome. But it also means I’m actively taking classes to make me a better programmer. If you remember that’s one of the goals for this project.
 
