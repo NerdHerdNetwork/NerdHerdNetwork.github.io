@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Castle Wars Update 2 - First-Person Melee Combat, Split Screen, and a minor refactor"
+title:  "Castle Wars Update 2 - First-Person Melee Combat, Split Screen, and a Minor Refactor"
 collection: castle-wars
 permalink: /castle-wars/sprint2/
 sidebar:
@@ -12,11 +12,12 @@ _By Frank "Weekie" Podraza_
 
 I’ve been gone for a while. Each one of these DevLogs/Blog Posts was supposed to be “2-3 weeks of work” and that was very much not the case. I am currently refactoring the sprints to move most of the non-necessary work (like sound systems, animation systems, modeling) out of the next couple sprints.
 
-Obviously, this sprint took way longer than it was supposed to, in case this happens again, the best way to support me is by downloading my two games on iOS and Android: Poke My Balls and Launch My Dog. The former is quite old and not great quality, but Launch My Dog is a much better game, and if you want to beat the whole thing it only takes like two hours.
+Obviously, this sprint took way longer than it was supposed to, in case this happens again, the best way to support me is by downloading my two games on iOS and Android: [**Poke My Balls**](/poke-my-balls/){:target="_blank"} and [**Launch My Dog**](/launch-my-dog/){:target="_blank"}. The former is quite old and not great quality, but Launch My Dog is a much better game, and if you want to beat the whole thing it only takes like two hours.
 
-Okay, so Castle Wars: more like I took some classes, and a war started. For real I took two classes, and each were significantly challenging, so I’m going to be breaking up this post into three chunks, I’ll call them Epochs, separated by each of the two classes.
+Okay, so Castle Wars: more like I took some classes, and a war started. For real, I took two classes, and each were significantly challenging, so I’m going to be breaking up this post into three chunks, I’ll call them Epochs, separated by each of the two classes.
 
 # Epoch 1
+---
 
 Epoch one starts in late 2021, like December 18th, or whenever the last devlog was released. I was really excited to keep working. School was out for break, and I had just started binging Gilmore girls. The goal was to build out the second part of the trifecta: weapons. The trifecta is the gameplay loop of movement, weapons, and abilities. 
 
@@ -35,7 +36,8 @@ Then Christmas happened, my brother got an oculus quest 2, and I stole it for a 
 
 As the holiday break ended, I created a simple FOV effect aggregation system, where each FOV effect is a function parameter, and the FOV is the result of the function, that way we can turn off specific effects, or have them run at the same time, say dashing while sprinting. I also started to use Plastic Source Control, and backup of the game as classes started to ramp up again.
 
-## Epoch 2
+# Epoch 2
+---
 
 So, in the last devlog I mentioned that I was making a Melee combat game because Bungie decided to make the Destiny 2 gunplay smooth as butter, as has spoiled me. Remember Bungie, my game still has swimming and ladders, I’m still winning. Well, they added the glaive, which is a first-person melee weapon, and feels so good I’m going to have some catching up to do, unless one of the developers who worked on the glaive wants a strictly unpaid internship where they build the same thing for me. Also, I will be adding a glaive into the game.
 
@@ -58,8 +60,8 @@ I had a plan to extremely overcomplicate the death camera system using graphs. W
 By now it was Friday of spring break, I was running out of days. I hastily added a pause menu, which didn’t play well with dying and/or swapping between keyboard and controller. There were a lot of issues with this, and it wasn’t a great spot to leave the project, but I had to leave it. I gave myself a day or so of a break because I knew what class was about to come. 
 
 
-### Epoch 3
-
+# Epoch 3
+---
 I’m a computer science student, which means I have crippling imposter syndrome. But it also means I’m actively taking classes to make me a better programmer. If you remember that’s one of the goals for this project.
 
 Unfortunately, the way this manifests is that I’ll work on the project, then take some time off for a class, and then I realize that everything I’ve already written is flawed in some way. Now, that’s okay, it means I’ve learned something, it means I’m progressing. But it also means that there might be some large gaps in “progress” because I find it better to rewrite existing foundation code, sometimes from the ground up. It’s where I’m not building up, but rather I’m giving myself the ability to build higher. The class I took this past spring is commonly known as one the hardest programming classes at my university: Computer Systems. The class talks about high level concepts such as:
