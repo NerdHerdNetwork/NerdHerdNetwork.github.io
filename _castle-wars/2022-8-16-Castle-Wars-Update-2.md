@@ -8,7 +8,7 @@ sidebar:
 
 ---
 
-_By Frank "Weekie" Podraza_
+_By Frank "Weekie" Podraza, Aug. 16, 2022_
 
 I’ve been gone for a while. Each one of these DevLogs/Blog Posts was supposed to be “2-3 weeks of work” and that was very much not the case. I am currently refactoring the sprints to move most of the non-necessary work (like sound systems, animation systems, modeling) out of the next couple sprints.
 Obviously, this sprint took way longer than it was supposed to, in case this happens again, the best way to support me is by downloading my two games on iOS and Android: [**Poke My Balls**](/poke-my-balls/){:target="_blank"} and [**Launch My Dog**](/launch-my-dog/){:target="_blank"}. The former is quite old and not great quality, but Launch My Dog is a much better game, and if you want to beat the whole thing it only takes like two hours.

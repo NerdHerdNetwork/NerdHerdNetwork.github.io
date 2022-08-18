@@ -8,7 +8,7 @@ sidebar:
 
 ---
 
-_By Frank "Weekie" Podraza_
+_By Frank "Weekie" Podraza, Oct. 14, 2021_
 
 ## Intro / Project Start
 
