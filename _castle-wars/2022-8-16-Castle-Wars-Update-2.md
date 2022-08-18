@@ -88,6 +88,9 @@ In the class we'd  take these concepts and apply them by building a multi-thread
 
 I knew I wanted to improve the foundation of Castle Wars before I continued. I just didn't know how. I spent a day debating swapping to the Unreal Engine, I debated rewriting the whole thing, or not continuing at all. A couple days into this mini existential crisis I saw a video by someone named John Leorid, titled: “Watch This Before Working on a Big Game in Unity” and I watched it.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kML67qB9Chk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
+
 It inspired me to not only keep going, but keep going in Unity. The video assured me that it was possible to build a big game in Unity. It also pointed out that most Unity DevLogs are not about large games, and don’t have to take as much complexity into account. I started to redesign the systems in a big design diagram.
 
 So here is the big design diagram:
