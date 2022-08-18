@@ -18,25 +18,24 @@ Okay, so Castle Wars: more like I took some classes, and a [**war started**](htt
 ---
 
 Epoch one starts in late 2021, like December 18th, or whenever the [**last DevLog**](https://www.youtube.com/watch?v=PfAUCvGBT7Y){:target="_blank"} was released. I was really excited to keep working on the project. University was out for break, and I had just started binging Gilmore girls. The goal was to build out the second part of the trifecta: weapons. The trifecta is the gameplay loop of movement, weapons, and abilities. 
-![sword-image-right](/assets/images/castle-wars/update2/Sword.PNG){: .align-right}
+
+![sword-image-right](/assets/images/castle-wars/update2/Sword.PNG){: .align-right width="40%"}
 First, I created the sword class, which is a container for: damage values, ranges, lunge distances, and attack frequencies. I modelled one of the worst swords I’ve seen in a while, made a goofy little animation, created all the UI for the sword. There are the three attacks with cooldowns, an indicator of which one was recently hit, and a blocking indicator. 
 
 
-![enemy-image-left](/assets/images/castle-wars/update2/Enemy.PNG){: .align-left}
+![enemy-image-left](/assets/images/castle-wars/update2/Enemy.PNG){: .align-left width="50%"}
 I went online and found a sound effect pack for melee combat, though I haven’t used it yet. I also added a sound for when you try to attack but the lockout from the previous attack is not over.
 So, we have a sword, now we need something to hit, right? I took a capsule with a red texture, slapped a name tag and a health bar on the top, made it rotate towards the player, and gave it a health component. 
 
 
 
 Now there’s a sort of loop with the enemies: they're alive, they lose health, at some point they die, and then they need to be respawned after a time. Then the cycle would repeat. I needed to create something to manage this. Luckily, I noticed that health kits worked the same way. They spawned, exist for some time, get used, and needed to be respawned. I created a little object management system, and then extended it for enemy management. 
+
 In order to give the enemies some place to hang out, I tore down a wall, added terrain with some more water, and setup some spaces for future use. The one at the top is for the enemies to inhabit.
 
-![image-right](/assets/images/castle-wars/update1/trainingground.PNG){: .align-center}
+![image-right](/assets/images/castle-wars/update2/Terrain.PNG){: .align-right width="40%"}
 
-Now we have a sword, and we have something to hit, how do we hit it? I watched a DevLog for Chivalry: Medieval Warfare, where the developers talked about having the sword swing, and just tracking what it collides with during the swing, and applying the damage to those objects. I follow roughly the same system.  I also added lunging, because the energy sword in Halo has lunging. This is accomplished by having a lunge trigger in front of the character and keeping track of if there are enemies in the trigger. If so, we decide which enemy to lunge towards (line of sight goes first, otherwise the closest in the trigger), and then the character gets lunged towards the enemy.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QXnGr-g07pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
----
+Now we have a sword, and we have something to hit, how do we hit it? I watched a DevLog for [**Chivalry: Medieval Warfare**](https://www.youtube.com/embed/QXnGr-g07pI){:target="_blank"}, where the developers talked about having the sword swing, and just tracking what it collides with during the swing, and applying the damage to those objects. I follow roughly the same system.  I also added lunging, because the energy sword in Halo has lunging. This is accomplished by having a lunge trigger in front of the character and keeping track of if there are enemies in the trigger. If so, we decide which enemy to lunge towards (line of sight goes first, otherwise the closest in the trigger), and then the character gets lunged towards the enemy.
 
 Then Christmas happened, my brother got an oculus quest 2, and I stole it for a few days to play Half-Life: Alyx. I got inspired by the holographic UI and city that I started designing holographic swords. There’s going to be 6 or so sword types, and then each type with have variations, A.K.A. forms. One of those forms will be holographic. This is a potential monetization strategy: the selling of sword forms, but I think I’d rather put them behind playing the game. Either way, the form will just be cosmetic and have no effect on gameplay.
 
@@ -93,6 +92,7 @@ This looks scary, but it makes sense to me. It’s designed like a computer chip
 This design allows me to abstract systems into modules, and not have to worry about how they work on the inside. It splits systems into modules. This way I can also re-use many of these systems in future games. I want you to pay close attention to two areas. First, the top-left section where I handle input, and secondly this middle-right bridge where the players interact with the game manager which interacts with the server. These are the two areas which I spent the most time on.
 
 Let’s focus on the Player-Manager-Server Model First. I realized pretty quickly that I needed to rip apart and re-design a lot of the player’s systems to make them able to be duplicated in order to allow for Split Screen and remove cross-talk. This is how I played Castle Wars in Halo: Reach with friends, so I wanted to build it into the game. When I say cross talk, I mean there's a situation like: a component  needs to reference a player, but the player doesn’t exist yet, so the player reference must be found when a player is spawned. Well, when we spawn multiple players, the references can get mixed up if Player A's component finds Player B, or vice versa, or both.
+
 The new player prefab contains a PlayerInput component, and an input bootstrapper (we’ll get into those two later), as well references to a child player prefab and UI Object. All the component references are settled with the prefab, and thus there is no need to find any of them. Instead of removing the player upon death, we now deactivate it so that the reference is not lost. I also combined all three UIs (HUD, Death Screen, Pause Screen) into one write-only system. The bootstrapper keep track of the player’s state and tells the UI change accordingly. 
 
 
