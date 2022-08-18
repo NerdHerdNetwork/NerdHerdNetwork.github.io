@@ -17,7 +17,7 @@ Okay, so Castle Wars: more like I took some classes, and a [**war started**](htt
 # Epoch 1: The Before Times
 ---
 
-Epoch one starts in late 2021, like December 18th, or whenever the [**last devlog**](https://www.youtube.com/watch?v=PfAUCvGBT7Y){:target="_blank"} was released. I was really excited to keep working on the project. University was out for break, and I had just started binging Gilmore girls. The goal was to build out the second part of the trifecta: weapons. The trifecta is the gameplay loop of movement, weapons, and abilities. 
+Epoch one starts in late 2021, like December 18th, or whenever the [**last DevLog**](https://www.youtube.com/watch?v=PfAUCvGBT7Y){:target="_blank"} was released. I was really excited to keep working on the project. University was out for break, and I had just started binging Gilmore girls. The goal was to build out the second part of the trifecta: weapons. The trifecta is the gameplay loop of movement, weapons, and abilities. 
 First, I created the sword class, which is a container for: damage values, ranges, lunge distances, and attack frequencies. I modelled one of the worst swords I’ve seen in a while, made a goofy little animation, created all the UI for the sword. There are the three attacks with cooldowns, an indicator of which one was recently hit, and a blocking indicator. 
 
 
@@ -32,7 +32,7 @@ In order to give the enemies some place to hang out, I tore down a wall, added t
 
 
 
-Now we have a sword, and we have something to hit, how do we hit it? I watched a devlog for Chivalry: Medieval Warfare, where the developers talked about having the sword swing, and just tracking what it collides with during the swing, and applying the damage to those objects. I follow roughly the same system.  I also added lunging, because the energy sword in Halo has lunging. This is accomplished by having a lunge trigger in front of the character and keeping track of if there are enemies in the trigger. If so, we decide which enemy to lunge towards (line of sight goes first, otherwise the closest in the trigger), and then the character gets lunged towards the enemy.
+Now we have a sword, and we have something to hit, how do we hit it? I watched a DevLog for Chivalry: Medieval Warfare, where the developers talked about having the sword swing, and just tracking what it collides with during the swing, and applying the damage to those objects. I follow roughly the same system.  I also added lunging, because the energy sword in Halo has lunging. This is accomplished by having a lunge trigger in front of the character and keeping track of if there are enemies in the trigger. If so, we decide which enemy to lunge towards (line of sight goes first, otherwise the closest in the trigger), and then the character gets lunged towards the enemy.
 
 
 
@@ -43,7 +43,7 @@ As the holiday break ended, I created a simple FOV effect aggregation system, wh
 # Epoch 2: Spring Break 2022
 ---
 
-In the last devlog I mentioned that I was specifically making a melee combat game because Bungie decided to make the Destiny 2 gunplay smooth as butter, which has since spoiled me. Now, my game still has swimming and ladders-- so I think I’m still winning. Depite the rivalry, they added the glaive, which is a first-person melee weapon, and feels so good I’m  have some catching up to do, unless one of the developers who worked on the glaive wants a strictly-unpaid internship where they build the same thing for me.
+In the last DevLog I mentioned that I was specifically making a melee combat game because Bungie decided to make the Destiny 2 gunplay smooth as butter, which has since spoiled me. Now, my game still has swimming and ladders-- so I think I’m still winning. Depite the rivalry, they added the glaive, which is a first-person melee weapon, and feels so good I’m  have some catching up to do, unless one of the developers who worked on the glaive wants a strictly-unpaid internship where they build the same thing for me.
 
 The class I took which splits Epoch 1 and 2 was Analysis of Algorithms. The class covered how to make recursive algorithms more efficient, or even make them iterative using dynamic programming. Then we took a deep dive into the graph data structure. The graph structure is a group of nodes that are connected by edges. Now there’s many graph applications pertaining to navigation, processing large problems, search, state machines, and AI. One that's not in that list, and the only one we’re going to take away for now: is that we use graphs to traverse buttons and UI elements on a controller.
 
@@ -98,36 +98,36 @@ The new player prefab contains a PlayerInput component, and an input bootstrappe
 The game manager now holds an array of local players, as well as their UIs and Death Cameras. The game manager sets camera properties when players are spawned, which splits the screen, and orders the cameras correctly. The game manager also keeps track of per-player rendered things.
 
 Quick note: There’s 4 layers of rendering per player now: 
-1.	The world/Third person weapon models
-2.	First person weapon models
-3.	World space UI like name tags
+1.	World/third-person weapon models
+2.	First-person weapon models
+3.	World space UI, like name tags
 4.	Camera space UI
 
-The game manager keeps track of the weapon models and name tags that need to be rendered per player so that each player, say: turns off all other local player’s first-person weapons so they aren’t rendered on top of the level because they’re on the weapon layer. It only needs to keep track of local player things because networked players will only have third person models and won’t need the nametags to face them on the local computer, just on their own.
 
-The game manager handles sound management because there can only be one audio listener at a given time and we need to aggregate all the local players sounds.
 
-Lastly, the game manager takes any server calls for the player and gets them to the server, either local or remote)
+The game manager keeps track of the weapon models and name tags that need to be rendered per-player. For eaxample: each player turns _off_ all other local player’s first-person weapons so they aren’t rendered. Each player also turns _on_ all the third-person weapon models except their own. Lastly, the game manager takes any server calls the player needs done (asking to spawn, getting a spawnpoint) and interfaces with the server on behalf of the player.
 
-Finally, the server. The server handles global game settings like respawn times, per team prefabs and death camera, spawn points, health regen settings. It stores networked objects and a list of players. The server also keeps track of respawn timers for players. And tells the game manager when/where to spawn a given player. The next sprint is going to be networking, so much more server stuff will come next time.
-Okay, now let’s look at the other section I wanted to point out on the diagram: Input. So, I had to refactor all of this because hitting a button on one controller would propagate to all players. My original solution of keeping track of each player’s devices and validating input that way didn’t work because then you could only press a button on one controller at a time, which isn’t ideal.
+The last component: the server. The server handles global game settings like: respawn times, per-team prefabs and death camera locations, spawn points, and health regen settings. It keeps track of networked objects and a list of players. The server also keeps track of respawn timers for players and tells the game manager when/where to spawn a given player. The next sprint is going to be networking, so much more server stuff will come next time.
 
-I did make this input setup screen; you need multiple controllers for multiple players. Keyboard/Mouse only active for the first player. Player 1 would control the menu, and the other players can pull up their settings.
 
-To solve the input validation problem, I bit the bullet, and I started using the player input component. This takes a list of input mapping, and signals events when the input maps are detected. This event goes to the Input bootstrapped, which directs the input to either the UI or the player, depending on the state of the player. So now, after a decent chunk of time, I have working split screen!
+Okay, now let’s look at the other section I wanted to point out on the diagram: Input. I had to refactor all of this because hitting a button on one controller would propagate input to all players. My original solution-- keeping track of each player’s devices and validating input by checking on each character if the device belonged to the character-- didn’t work because then you could only press a button on one controller at a time, (two players couldn't jump or attack at the same time) which isn’t ideal. This is because all of the input still had to go through the input actions asset funnel. Similar to how you can't really have two people enter a door at the exact same time, we couldn't have two controllers pressing the same button (or using the same stick) at the same time.
 
-I then fully implemented the pause menu from Epoch 2 and started writing this video. 
+One remenent of this original method was an input setup screen; you need multiple controllers for multiple players. Keyboard/Mouse only active for the first player. Player 1 would control the menu, and the other players can pull up their settings.
 
-These devlogs are likely going to get more and more complex. Naturally as I add in networking, the programming concepts are going to get more and more complex as the game grows. This is going to be a huge project. The largest I’ve undertaken. 
 
-As mentioned earlier: I haven’t seen any large game devlogs (or at least of finished games) and I kind of want to do that. There aren’t any tutorials on it either. I figured, maybe I could teach some of it. I could at least give people some sort of expectation that it isn’t going to be all fun and games, game development isn’t just map design, character design, animating, and sounds.
 
-I still want to show all of that because it’s fun, but I also want to explain some of the fundamental programming concepts that come with building large games. Game development isn’t just building a world, it’s an ever-growing task that can easily get out of hand and overwhelm you if you don’t stop every once in a while to plan ahead and limit yourself when necessary.
+To solve the input validation problem, I bit the bullet, and I started using the PlayerInput component, which is a part of Unity's new input system. This takes a list of input mappings (actions asset), and signals events when the input maps are detected. It also can be assigned devices. If no devices are specified it still uses all devices. These events go to the input bootstrapper, which directs the input to either the UI or the character controller depending on the state of the player. So now, after a decent chunk of time, I have working split screen!
 
-I’ll likely make “Asides” on programming concepts, because having 10, arguably boring, minutes of discussing computer science concepts in the middle of a devlog isn’t very fun. I’ll try to make them engaging, but at least accurate. I don’t fully know what I’m doing, but if I can figure it out well enough to teach it, I’ll at least have a way of combating imposter syndrome. Also, since the goal is to create an accurate source, if anything I say is incorrect, please let me know in the comments.
+# Conclusion
+---
 
-Okay, if you made it this far in the video, subscribe, like it, you know the drill. I made a mailing list and a TikTok which I’m going to use as further avenues of drumming up promotion of the game until it’s out. If you want to support me, the best way to do that is to play my mobile games Poke My Balls and Launch My Dog.
+Naturally as I add in networking, these DevLogs-- and the programming concepts buried within-- are likely going to get more and more complex as the game grows. This is going to be a huge project. As mentioned earlier: I haven’t seen any large game DevLogs (or at least of finished games) and I kind of want to do that. There aren’t any tutorials on making larger games either. I figured, maybe I could teach some of it. I could at least give people some sort of expectation that it isn’t going to be all fun and games, game development isn’t just map design, character design, animating, and sounds, but also  an ever-growing task that can easily get out of hand and overwhelm you if you don’t stop every once in a while to plan ahead and limit yourself when necessary.
 
-Real Quick record time: Kid Amnesia, Room on Fire, Under Great White Northern Lights, and Tame Impala’s live versions. 
+I’ll likely make “Asides” on programming concepts, because having 10, arguably boring, minutes of discussing computer science concepts in the middle of a DevLog isn’t very fun. I’ll try to make them engaging, but at least accurate. I don’t fully know what I’m doing, but if I can figure it out well enough to teach, I’ll at least have a way of combating imposter syndrome. Also, since the goal is to create an accurate source, if anything I say is incorrect, please let me know in the comments.
 
-Okay I’ll see you next time.
+Okay, if you made it this far in the video, subscribe, like it, you know the drill. I made a [**Mailing List**](/castle-wars/mail/){:target="_blank"} and a [**TikTok**](https://www.tiktok.com/@castlewarsgame){:target="_blank"} which I’m going to use as further avenues of drumming up promotion for the game. Once again, if you want to support me, the best way to do that is to play my mobile games: [**Poke My Balls**](/poke-my-balls/){:target="_blank"} and [**Launch My Dog**](/launch-my-dog/){:target="_blank"}.
+
+Real Quick record time: Kid A mnesia, Room on Fire, Under Great White Northern Lights, and Tame Impala’s live versions. 
+
+Okay I’ll see you next time,
+Frank
