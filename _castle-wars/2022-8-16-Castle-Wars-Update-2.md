@@ -33,7 +33,7 @@ Now there’s a sort of loop with the enemies: they're alive, they lose health, 
 
 In order to give the enemies some place to hang out, I tore down a wall, added terrain with some more water, and setup some spaces for future use. The one at the top is for the enemies to inhabit.
 
-![image-right](/assets/images/castle-wars/update2/Terrain.PNG){: .align-right width="40%"}
+![terrain-image-center](/assets/images/castle-wars/update2/Terrain.PNG){: .align-center width="80%"}
 
 Now we have a sword, and we have something to hit, how do we hit it? I watched a DevLog for [**Chivalry: Medieval Warfare**](https://www.youtube.com/embed/QXnGr-g07pI){:target="_blank"}, where the developers talked about having the sword swing, and just tracking what it collides with during the swing, and applying the damage to those objects. I follow roughly the same system.  I also added lunging, because the energy sword in Halo has lunging. This is accomplished by having a lunge trigger in front of the character and keeping track of if there are enemies in the trigger. If so, we decide which enemy to lunge towards (line of sight goes first, otherwise the closest in the trigger), and then the character gets lunged towards the enemy.
 
