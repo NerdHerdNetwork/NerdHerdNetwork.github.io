@@ -29,6 +29,7 @@ Epoch one starts in late 2021, like December 18th, or whenever the [**last DevLo
 First, I created the sword class, which is a container for: damage values, ranges, lunge distances, and attack frequencies. I modelled one of the worst swords I’ve seen in a while, made a goofy little animation, created all the UI for the sword. There are the three attacks with cooldowns, an indicator of which one was recently hit, and a blocking indicator. 
 
 
+
 ![enemy-image-left](/assets/images/castle-wars/update2/Enemy.PNG){: .align-left width="50%"}
 I went online and found a sound effect pack for melee combat, though I haven’t used it yet. I also added a sound for when you try to attack but the lockout from the previous attack is not over.
 So, we have a sword, now we need something to hit, right? I took a capsule with a red texture, slapped a name tag and a health bar on the top, made it rotate towards the player, and gave it a health component. 
@@ -139,7 +140,7 @@ I’ll likely make “Asides” on programming concepts, because having 10, argu
 
 Okay, if you made it this far in the video, subscribe, like it, you know the drill. I made a [**Mailing List**](/castle-wars/mail/){:target="_blank"} and a [**TikTok**](https://www.tiktok.com/@castlewarsgame){:target="_blank"} which I’m going to use as further avenues of drumming up promotion for the game. Once again, if you want to support me, the best way to do that is to play my mobile games: [**Poke My Balls**](/poke-my-balls/){:target="_blank"} and [**Launch My Dog**](/launch-my-dog/){:target="_blank"}.
 
-Real Quick record time: Kid A mnesia, Room on Fire, Under Great White Northern Lights, and Tame Impala’s live versions. 
+Real Quick record time: Kid A Mnesia, Room on Fire, Under Great White Northern Lights, and Tame Impala’s Live Versions. 
 
 Okay I’ll see you next time,
 Frank
