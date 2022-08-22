@@ -55,7 +55,7 @@ In the last DevLog I mentioned that I was specifically making a melee combat gam
 
 The class I took which splits Epoch 1 and 2 was Analysis of Algorithms. The class covered how to make recursive algorithms more efficient, or even make them iterative using dynamic programming. Then we took a deep dive into the graph data structure. The graph structure is a group of nodes that are connected by edges. Now there’s many graph applications pertaining to navigation, processing large problems, search, state machines, and AI. One that's not in that list, and the only one we’re going to take away for now: is that we use graphs to traverse buttons and UI elements on a controller.
 
-
+![UI-image-center](/assets/images/castle-wars/update2/UIPane.gif){: .align-center}
 
 Burnt out Frank figured, well I have a week break, how hard could adding controller support be? I quickly added controller input to the player character controller. Though, I still need to implement toggle sprint and toggle crouch, so you don’t need to hold down the controller's left stick to sprint.
 
