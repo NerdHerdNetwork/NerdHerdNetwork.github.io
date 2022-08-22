@@ -96,17 +96,19 @@ It inspired me to not only keep going, but keep going in Unity. The video assure
 
 So here is the big design diagram:
 
-
+![Design-image-center](/assets/images/castle-wars/update2/DesignDiagram.png){: .align-center}
 
 This looks scary, but it makes sense to me. It’s designed like a computer chip. This allows for me to have multiple local players, and have a server in a few different places. This also eliminates cross talk between players, which allows me to have multiple players.
 
 This design allows me to abstract systems into modules, and not have to worry about how they work on the inside. It splits systems into modules. This way I can also re-use many of these systems in future games. I want you to pay close attention to two areas. First, the top-left section where I handle input, and secondly this middle-right bridge where the players interact with the game manager which interacts with the server. These are the two areas which I spent the most time on.
 
+![Design-image-center](/assets/images/castle-wars/update2/Focus1.png){: .align-center}
+
 Let’s focus on the Player-Manager-Server Model First. I realized pretty quickly that I needed to rip apart and re-design a lot of the player’s systems to make them able to be duplicated in order to allow for Split Screen and remove cross-talk. This is how I played Castle Wars in Halo: Reach with friends, so I wanted to build it into the game. When I say cross talk, I mean there's a situation like: a component  needs to reference a player, but the player doesn’t exist yet, so the player reference must be found when a player is spawned. Well, when we spawn multiple players, the references can get mixed up if Player A's component finds Player B, or vice versa, or both.
 
 The new player prefab contains a PlayerInput component, and an input bootstrapper (we’ll get into those two later), as well references to a child player prefab and UI Object. All the component references are settled with the prefab, and thus there is no need to find any of them. Instead of removing the player upon death, we now deactivate it so that the reference is not lost. I also combined all three UIs (HUD, Death Screen, Pause Screen) into one write-only system. The bootstrapper keep track of the player’s state and tells the UI change accordingly. 
 
-
+![Design-image-center](/assets/images/castle-wars/update2/Bootstrap.png){: .align-center}
 
 The game manager now holds an array of local players, as well as their UIs and Death Cameras. The game manager sets camera properties when players are spawned, which splits the screen, and orders the cameras correctly. The game manager also keeps track of per-player rendered things.
 
@@ -122,12 +124,13 @@ The game manager keeps track of the weapon models and name tags that need to be 
 
 The last component: the server. The server handles global game settings like: respawn times, per-team prefabs and death camera locations, spawn points, and health regen settings. It keeps track of networked objects and a list of players. The server also keeps track of respawn timers for players and tells the game manager when/where to spawn a given player. The next sprint is going to be networking, so much more server stuff will come next time.
 
+![Design-image-center](/assets/images/castle-wars/update2/Focus2.png){: .align-center}
 
 Okay, now let’s look at the other section I wanted to point out on the diagram: Input. I had to refactor all of this because hitting a button on one controller would propagate input to all players. My original solution-- keeping track of each player’s devices and validating input by checking on each character if the device belonged to the character-- didn’t work because then you could only press a button on one controller at a time, (two players couldn't jump or attack at the same time) which isn’t ideal. This is because all of the input still had to go through the input actions asset funnel. Similar to how you can't really have two people enter a door at the exact same time, we couldn't have two controllers pressing the same button (or using the same stick) at the same time.
 
 One remenent of this original method was an input setup screen; you need multiple controllers for multiple players. Keyboard/Mouse only active for the first player. Player 1 would control the menu, and the other players can pull up their settings.
 
-
+![inputscreen-image-center](/assets/images/castle-wars/update2/InputScreen.PNG){: .align-center}
 
 To solve the input validation problem, I bit the bullet, and I started using the PlayerInput component, which is a part of Unity's new input system. This takes a list of input mappings (actions asset), and signals events when the input maps are detected. It also can be assigned devices. If no devices are specified it still uses all devices. These events go to the input bootstrapper, which directs the input to either the UI or the character controller depending on the state of the player. So now, after a decent chunk of time, I have working split screen!
 
