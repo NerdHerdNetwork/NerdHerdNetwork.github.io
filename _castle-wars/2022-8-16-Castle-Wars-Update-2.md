@@ -146,4 +146,5 @@ Okay, if you made it this far in the video, subscribe, like it, you know the dri
 Real Quick record time: Kid A Mnesia, Room on Fire, Under Great White Northern Lights, and Tame Impala’s Live Versions. 
 
 Okay I’ll see you next time,
+
 Frank
