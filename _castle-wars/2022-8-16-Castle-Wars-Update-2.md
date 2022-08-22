@@ -61,7 +61,7 @@ Burnt out Frank figured, well I have a week break, how hard could adding control
 
 To handle UI input I made a node class, and a graph class. The graph class stores a list of nodes, a starting node, and an event to run upon pressing the back button. This way we can now have UI “Panes” which we can horizontally traverse using the left stick or D-Pad, and then vertically traverse to different panes with the A and B buttons (A.K.A. affirmative and back).
 
-
+![traversal-image-center](/assets/images/castle-wars/update2/PaneTraversal.gif){: .align-center}
 
 Playstation controllers just don’t want to work, to my knowledge this is an issue with Unity’s new input system, and not an issue I created. I gave up on the playstation controller for now and used the remaining time to make a component that holds and updates all of the button icons in all the UI panes when the player swaps input devices. 
 
@@ -115,10 +115,10 @@ The game manager now holds an array of local players, as well as their UIs and D
 Quick note: There’s 4 layers of rendering per player now: 
 1.	World/third-person weapon models
 2.	First-person weapon models
-3.	World space UI, like name tags
+3.	World space UI, like hit numbers
 4.	Camera space UI
 
-
+![CameraLayers-image-center](/assets/images/castle-wars/update2/CameraLayers.gif){: .align-center}
 
 The game manager keeps track of the weapon models and name tags that need to be rendered per-player. For eaxample: each player turns _off_ all other local player’s first-person weapons so they aren’t rendered. Each player also turns _on_ all the third-person weapon models except their own. Lastly, the game manager takes any server calls the player needs done (asking to spawn, getting a spawnpoint) and interfaces with the server on behalf of the player.
 
