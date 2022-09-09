@@ -16,6 +16,9 @@ gallery:
 
 _By Frank "Weekie" Podraza, Aug. 16, 2022_
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8_fJnWmje54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
+
 I’ve been gone for a while. Each one of these DevLogs/Blog Posts was supposed to be “2-3 weeks of work” and that was very much not the case. I am currently refactoring the sprints to move most of the non-necessary work (like sound systems, animation systems, modeling) out of the next couple sprints.
 Obviously, this sprint took way longer than it was supposed to, in case this happens again, the best way to support me is by downloading my two games on iOS and Android: [**Poke My Balls**](/poke-my-balls/){:target="_blank"} and [**Launch My Dog**](/launch-my-dog/){:target="_blank"}. The former is quite old and not great quality, but Launch My Dog is a much better game, and if you want to beat the whole thing it only takes like two hours.
 Okay, so Castle Wars: more like I took some classes, and a [**war started**](https://www.nytimes.com/live/2022/08/17/world/ukraine-russia-news-war){:target="_blank"}. For real, I took two classes, and each were significantly challenging, so I’m going to be breaking up this post into three chunks, I’ll call them Epochs, separated by each of the two classes.
