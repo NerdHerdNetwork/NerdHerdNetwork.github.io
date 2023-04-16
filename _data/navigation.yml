@@ -58,13 +58,12 @@ castle-wars-nav:
         url: /castle-wars/sprint1/
       - title: "Sprint 2: Basic Combat, Split Screen"
         url: /castle-wars/sprint2/
-        children:
-        - title: "Sprint 2.1: Settings System"
-          url: /castle-wars/sprint2/1/
-        - title: "Sprint 2.2: Enemies that Fight Back"
-          url: /castle-wars/sprint2/2/
-        - title: "Sprint 2.3: Basic Character Controller"
-          url: /castle-wars/sprint2/3/
+      - title: "Sprint 2.1: Settings System"
+        url: /castle-wars/sprint2/1/
+      - title: "Sprint 2.2: Enemies that Fight"
+        url: /castle-wars/sprint2/2/
+      - title: "Sprint 2.3: Sword Combat Improvements"
+        url: /castle-wars/sprint2/3/
   - title: "Mid Development"
   - title: "Late Development"
   - title: "Release"
