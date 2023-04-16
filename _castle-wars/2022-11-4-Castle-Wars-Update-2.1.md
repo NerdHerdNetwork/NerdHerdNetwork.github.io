@@ -16,7 +16,6 @@ I wanted to add settings and a settings menu to my game to enable accessibility 
 
 Really quickly, this is the new main menu. I whipped it up because I got really tired of looking at the default Unity skybox. The player devices panel has been moved to the top left. 
 
-[PUT THE NEW MAIN MENU image here]
 ![menu-image-center](/assets/images/castle-wars/update2.1/MainMenu.PNG){: .align-center}
 
 Back to settings. I wrote a short list of which settings I wanted to add into the game. This list includes:
@@ -52,17 +51,14 @@ I whipped up a settings menu in the main menu, which would edit Player1's settin
 
 1. The toggle, which when pressing the affirmative button toggles the state of a variable.
 
-[SHOW THE TOGGLE UI ELEMENT]
 ![toggle-image-center](/assets/images/castle-wars/update2.1/toggle.gif){: .align-center}
 
 2. The value-selector, which when you click the affirmative button, hijacks the left and right navigation controls to edit a value by a certain amount, until you navigate up or down, or but the back button.
 
-[SHOW THE VALUE SELECT UI ELEMENT]
 ![valueSelect-image-center](/assets/images/castle-wars/update2.1/VS.gif){: .align-center}
 
 Now we can edit the values, but an unseen problem has arisen. The whole menu does not fit on one screen. This really isn't that big of an issue, but I need to have some way of scrolling with the controller. Each node in the UI now has a value for the vertical position of the scroll view which gets set when the node gets highlighted. If you've ever scrolled the Nintendo 3ds home menu this will feel exactly like that.
 
-[PAUSE MENU SCROLLING GIF]
 ![pause-image-center](/assets/images/castle-wars/update2.1/pauseMenuScrolling.gif){: .align-center}
 
 Speaking of unseen problems, what happens when we have 2 players that say, want to have different FOVs? There'd be a data collision. We're going to need to have a separate Databox objects for each local player. I created a settings object manager which stores a default, as well as 4 objects which can be edited, and correspond to a local player. Because we can export/import these settings, eventually they will be attached to an account, but for now I don't want to deal with that.
@@ -71,7 +67,6 @@ Later down the line I'll likely want to modularly generate the settings menu on 
 
 With everything now set up, I was able to implement the settings by pulling their values on the player character component and the camera effects component for the controls settings and the accessibility settings respectively. 
 
-[SHOW THE FOV VALUE SELECT WORKING IN A GIF]
 ![FOV-image-center](/assets/images/castle-wars/update2.1/FOVSettingWorking.gif){: .align-center}
 
 Alright, I'll see you next time,
