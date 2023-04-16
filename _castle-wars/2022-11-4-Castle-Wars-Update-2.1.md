@@ -12,7 +12,7 @@ _By Frank "Weekie" Podraza, Nov. 4, 2022_
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JEB6emgWHdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ---
 
-I wanted to add settings and a settings menu to my game to enable accessibility settings for those who need it, including myself. I chose to use Unity Asset: Databox. Databox is a modular data storage solution. I got it in a humble bunder a while back, so this is also a way to alleviate some buyer's remorse.
+I wanted to add settings and a settings menu to my game to enable accessibility settings for those who need it, including myself. I chose to use Unity Asset: [**Databox**](https://assetstore.unity.com/packages/tools/utilities/databox-data-editor-save-solution-155189). Databox is a modular data storage solution. I got it in a humble bunder a while back, so this is also a way to alleviate some buyer's remorse.
 
 Really quickly, this is the new main menu. I whipped it up because I got really tired of looking at the default Unity skybox. The player devices panel has been moved to the top left. 
 
@@ -49,11 +49,11 @@ Here is the main settings menu.
 
 I whipped up a settings menu in the main menu, which would edit Player1's settings. I had to implement 2 new controller support UI elements
 
-1. The toggle, which when pressing the affirmative button toggles the state of a variable.
+First, the toggle, which when pressing the affirmative button toggles the state of a variable.
 
 ![toggle-image-center](/assets/images/castle-wars/update2.1/toggle.gif){: .align-center}
 
-2. The value-selector, which when you click the affirmative button, hijacks the left and right navigation controls to edit a value by a certain amount, until you navigate up or down, or but the back button.
+And second, the value-selector, which when you click the affirmative button, hijacks the left and right navigation controls to edit a value by a certain amount, until you navigate up or down, or but the back button.
 
 ![valueSelect-image-center](/assets/images/castle-wars/update2.1/VS.gif){: .align-center}
 
