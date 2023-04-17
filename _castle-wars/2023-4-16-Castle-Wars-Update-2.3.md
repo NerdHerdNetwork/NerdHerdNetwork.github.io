@@ -11,3 +11,12 @@ _By Frank "Weekie" Podraza, Apr. 16, 2023_
 
 Put the IFrame Here
 ---
+
+
+
+Quick record time/Recommendations:
+
+1. Benches - Their singles (Violent, LA Friends, It doesn't Have to Change, Mephisto's Waltz, Common Sense, I don't Make Me)
+2. The Strokes - Comedown Machine
+3. Live at Bush Hall - Black Country, New Road
+4. The Velvet Underground - Loaded

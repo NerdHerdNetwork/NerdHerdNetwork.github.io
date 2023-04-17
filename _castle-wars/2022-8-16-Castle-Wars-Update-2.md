@@ -146,7 +146,12 @@ I’ll likely make “Asides” on programming concepts, because having 10, argu
 
 Okay, if you made it this far in the video, subscribe, like it, you know the drill. I made a [**Mailing List**](/castle-wars/mail/){:target="_blank"} and a [**TikTok**](https://www.tiktok.com/@castlewarsgame){:target="_blank"} which I’m going to use as further avenues of drumming up promotion for the game. Once again, if you want to support me, the best way to do that is to play my mobile games: [**Poke My Balls**](/poke-my-balls/){:target="_blank"} and [**Launch My Dog**](/launch-my-dog/){:target="_blank"}.
 
-Real Quick record time: Kid A Mnesia, Room on Fire, Under Great White Northern Lights, and Tame Impala’s Live Versions. 
+Real Quick record time:
+
+1. Radiohead - Kid A Mnesia
+2. The Strokes - Room on Fire
+3. The White Stripes - Under Great White Northern Lights
+4. Tame Impala - Live Versions.
 
 Okay I’ll see you next time,
 

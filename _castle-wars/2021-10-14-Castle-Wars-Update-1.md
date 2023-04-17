@@ -175,5 +175,12 @@ I tabled player movement sounds until later, since I want to commit time to a fo
 
 What’s next? Combat. I have to make swords and basic abilities, then hook all of that up to the health system.
 
+Quick record time/recommendations:
+
+1. Queens of the Stone Age - ...Like Clockwork
+2. Interpol - Turn on the Bright Lights
+3. LCD Soundsystem - This is Happening
+4. The Strokes - The New Abnormal
+
 Best,
 Frank
