@@ -9,7 +9,7 @@ sidebar:
 
 _By Frank "Weekie" Podraza, Apr. 16, 2023_
 
-Put the IFrame Here
+Video would go here
 ---
 
 Hey there! I’ve been working on Castle Wars, and the combat system thus far has been kind of… lacking. 
@@ -18,17 +18,17 @@ Hey there! I’ve been working on Castle Wars, and the combat system thus far ha
 
 As far as animations go, there was a primary attack, and an idle animation. It was the bare minimum to try and get the attacks dealing damage, but there were no secondary and melee attacks, and no blocking/sheathing ability. 
 
-[Image of what the old primary attack looked like]
+![old-primary-image-center](/assets/images/castle-wars/update2.3/oldPrimary.gif){: .align-center}
 
 I set out to add more animations, as well as improve the current ones to feel much better. This also required overhauling lunging, the hit detection system, adding procedural weapon sway, and a lot of research.
 
 I figured my first step was to add arms. I had an arms model lying around from a NatureManufacturer asset I aquired in a humble bundle a while ago. I hope using it makes me feel less buyer's remorse.
 
-[Arms model T-Pose]
+![arms-image-center](/assets/images/castle-wars/update2.3/arms.png){: .align-center}
 
 Unity has a package called 'Animation Rigging' which has a nice bone and Inverse Kinematics (IK) system, so I added that package and rigged the arms. It gives me these two target points for each arm that I can move to where I want the hands to be and the IK system will do the rest of the work for me.
 
-[Moving arms rig around]
+![arms-moving-image-center](/assets/images/castle-wars/update2.3/movingArmTargets.gif){: .align-center}
 
 I was then able quickly animate a...
 
@@ -78,8 +78,6 @@ I decided that my lack of playing sword-combat games was likely the cause of thi
 5. Valheim 
 
 Breath of the wild was where I first noticed how short the actual attack animations are. I started examing Halo Reach energy sword swing animations, and I catalogued the pacing proportions of each part of the swing animation. The swing itself was only a sixth of each animation. The first third was the windup, then the next sixth was the swing, and the remaining half was the follow-through and reset.
-
-[Halo reach energy sword frame-by-frame]
 
 There was also hint of camera shake which indicated that the player's head was getting pulled by the momentum of the swing. Also, the sword was pulled off screen during the wind-up and went fully off screen after the swing itself. This is the sell the breadth of the swing, as well as to make the animator's life easier.
 
