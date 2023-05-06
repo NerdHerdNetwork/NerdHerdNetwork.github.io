@@ -9,7 +9,7 @@ sidebar:
 
 _By Frank "Weekie" Podraza, Apr. 16, 2023_
 
-Video would go here
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kBEVkI7GA0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ---
 
 Hey there! I’ve been working on Castle Wars, and the combat system thus far has been kind of… lacking. 
