@@ -64,6 +64,8 @@ castle-wars-nav:
         url: /castle-wars/sprint2/2/
       - title: "Sprint 2.3: Combat Updates"
         url: /castle-wars/sprint2/3/
+      - title: "Sprint 3: Steam Lobbies"
+        url: /castle-wars/sprint3/
   - title: "Mid Development"
   - title: "Late Development"
   - title: "Release"
