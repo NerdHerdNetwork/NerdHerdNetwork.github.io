@@ -9,7 +9,7 @@ sidebar:
   nav: "castle-wars-nav"
 ---
 
-Castle Wars is a prototype game currently in development. It is loosely based on the Halo: Reach gamemode of the same name. 
+Castle Wars is a prototype game currently in development. It is loosely based on the Halo: Reach game of the same name. 
 
 [**Join the Mailing List for Updates!**](/castle-wars/mail/){:target="_blank" .btn .btn--info .align-center}
 
@@ -20,6 +20,6 @@ Here's a Playlist of the DevLogs:
 ---
 
 
-Whole numbers are mainline, very large development updates. Updates with a decimal are smaller, and more common.
+Whole numbers are mainline, very large development updates. Updates with a decimal are smaller and more common.
 
 Here is a collection of blog posts about the project:

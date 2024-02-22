@@ -11,13 +11,13 @@ author: Frank
 
 _By Frank "Weekie" Podraza_
 
-The program was originally a small phone project for a few friends to play in the park. Then I wanted to make the program run on a standalone device. I took raspberry Pi with Windows IOT and wrote the project in unity. It was slow, but it worked. It could only be controlled from a separate laptop.
+The program was originally a small phone project for a few friends to play in the park. Then I wanted to make the program run on a standalone device. I took Raspberry Pi with Windows IOT and wrote the project in Unity. It was slow, but it worked. It could only be controlled from a separate laptop.
 
 <iframe width="840" height="472" src="https://www.youtube.com/embed/Tl7xJwxCgCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 ----
 
-I wanted it to be faster. I also wanted to learn Python. Since I could easily get python running on the Raspberry Pi, I built the game in that. It took a few days, and a lot of spagetti code, but it works. There is a Bomb Defuse mode like Counter-Strike, as well as king of the Hill from Halo, and Secure Area from Rainbow Six: Siege. It plays sounds from the various games.
+I wanted it to be faster. I also wanted to learn Python. Since I could easily get Python running on the Raspberry Pi, I built the game on that. It took a few days, and a lot of spaghetti code, but it works. There is a Bomb Defuse mode like Counter-Strike, as well as King of the Hill from Halo, and Secure Area from Rainbow Six: Siege. It plays sounds from the games.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K_t29QqYVi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
