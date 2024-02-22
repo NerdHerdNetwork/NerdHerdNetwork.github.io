@@ -66,6 +66,14 @@ castle-wars-nav:
         url: /castle-wars/sprint2/3/
       - title: "Sprint 3: Steam Lobbies"
         url: /castle-wars/sprint3/
+      - title: "Sprint 4: Restarting, Basic Multiplayer"
+        url: /castle-wars/sprint4/
+      - title: "Sprint 5: Lobby, Autogenerating Settings Menus"
+        url: /castle-wars/sprint5/
+      - title: "Sprint 6: Split Screen, Controller Support"
+        url: /castle-wars/sprint6/
+      - title: "Sprint 7: Advanced FPS Movement"
+        url: /castle-wars/sprint7/
   - title: "Mid Development"
   - title: "Late Development"
   - title: "Release"
