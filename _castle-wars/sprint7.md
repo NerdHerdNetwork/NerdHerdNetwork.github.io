@@ -9,7 +9,7 @@ sidebar:
 
 _By Frank "Weekie" Podraza, Feb. 24, 2024_
 
-This is where the video will go...
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aXHfOAmi0sk?si=l7cSKTb6fxe0a_WO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ---
 
 I built advanced movement abilities into my FPS Character controller since I want my player character to be as customizable as possible. I built in dashing, sliding, swimming, and flying alongside the usual suite of walking, sprinting, jumping, and crouching. All of this is network-ready which will help us in the future.
