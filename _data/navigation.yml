@@ -74,6 +74,8 @@ castle-wars-nav:
         url: /castle-wars/sprint6/
       - title: "Sprint 7: Advanced FPS Movement"
         url: /castle-wars/sprint7/
+      - title: "Sprint 8: Planets, Portals, and more"
+        url: /castle-wars/sprint7/
   - title: "Mid Development"
   - title: "Late Development"
   - title: "Release"
