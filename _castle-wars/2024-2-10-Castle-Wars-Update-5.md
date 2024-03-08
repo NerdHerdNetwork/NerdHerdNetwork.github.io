@@ -15,4 +15,4 @@ _By Frank "Weekie" Podraza, Feb. 10, 2024_
 In continuing my revision of the Castle Wars prototype I expanded the systems in the game to include a settings system, which can autogenerate a menu based on a Databox object it was given. I also built in synchronized map loading, and a game settings menu, added Steam support, built a lobby browser, and improved the lobby to allow for multiple players on each instance of the game. I'll expand this later to allow for local split-screen even within a remotely hosted game.
 
 I hope y'all enjoy the video!
-- Frank
+-Frank

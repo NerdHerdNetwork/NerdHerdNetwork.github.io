@@ -17,4 +17,4 @@ Castle Wars had accrued enough technical debt worthy of a restart, so I'm doing 
 Blog posts are going to be shorter these days, but the frequency of uploads is going to go up, so hopefully that's a worthy trade.
 
 Anyway, I hope y'all enjoy the video!
-- Frank
+-Frank

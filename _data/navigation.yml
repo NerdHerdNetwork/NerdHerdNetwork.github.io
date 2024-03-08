@@ -76,10 +76,16 @@ castle-wars-nav:
         url: /castle-wars/sprint7/
       - title: "Sprint 8: Planets, Portals, and more"
         url: /castle-wars/sprint8/
+      - title: "Sprint 9: Health and Interaction"
+        url: /castle-wars/sprint9/
   - title: "Mid Development"
   - title: "Late Development"
   - title: "Release"
   - title: "Post Release"
+  - title: "Misc."
+    children:
+      - title: "Demo Map 1: Planet"
+        url: /castle-wars/planetmap/
 
 footer:
   links:

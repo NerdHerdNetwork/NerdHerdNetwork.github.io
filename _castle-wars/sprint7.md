@@ -17,4 +17,4 @@ I built advanced movement abilities into my FPS Character controller since I wan
 I'm not sure if all of these abilities will make it into the release (given how far out that is), but I'd rather turn them off than not have them in the first place.
 
 Anyway, I hope y'all enjoy the video!
-- Frank
+-Frank

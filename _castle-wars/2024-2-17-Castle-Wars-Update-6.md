@@ -17,4 +17,4 @@ Split screen has been on a decline for a while, but it's not hard at all to impl
 A player pawn gets spawned for each player in the game, and we attach player drivers (scripts that send input) to each locally controlled player. This way we can control the players on our instance, but don't need to worry about controlling remote players since we wouldn't be able to do that anyways.
 
 Hopefully, y'all enjoy the video, it was fun to make!
-- Frank
+-Frank
