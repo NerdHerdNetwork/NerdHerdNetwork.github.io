@@ -33,7 +33,7 @@ This project was released and has an official landing page.
 
 [**Check it out**](/launch-my-dog/){:target="_blank" .btn .btn--info .align-center}
 
-![logo-right](/assets/images/LMD Icon.png){: .align-right height="30%" width="30%"}
+![logo-right](/assets/images/LMD Icon.jpg){: .align-right height="30%" width="30%"}
 Launch My Dog is a game where you launch a hot dog into a bun. I almost finished this game back in 2018 but felt that it wasn’t good enough to release. It didn’t feel fun. I came back to it in early 2020 and have been slowly working on it since. The goal was a tight small game that I could release on Mobile. There’s some fun programming in here like trajectory prediction, even through different mediums. Launch My Dog was released on July 10th, 2021. It is available on both the iOS App Store and Google Play. Leaving a review is greatly appreciated, it boosts the game in search. I am currently working on extra levels and general quality of life improvements.
 
 ## Screenshot Gallery

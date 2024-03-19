@@ -23,7 +23,7 @@ Poke My Balls started as a project called Tap2Kill. It's a simple game where dif
 
 ## Launch My Dog
 
-![image-left](/assets/images/LMD Icon.png){: .align-left height="45%" width="35%"}
+![image-left](/assets/images/LMD Icon.jpg){: .align-left height="45%" width="35%"}
 Launch My Dog is a game where you launch a hot dog into a bun. I almost finished this game back in 2018 but felt that it wasn't good enough to release. It didn't feel fun. I came back to it in early 2020 and have been slowly working on it since. The goal was a tight small game that I could release on Mobile. There's some fun programming in here like trajectory prediction, even through different mediums. I have learned a lot about optimization with this project. The original had all the levels loaded simultaneously, which was slow. Now it loads each level additively, on top of a base scene, which is considerably faster. This performance boost allowed me to push other aspects of the game, like level complexity. Launch My Dog was released on July 10th, 2021. It is available on both the iOS App Store and Google Play. Leaving a review is greatly appreciated, it boosts the game in search. I am currently working on extra levels and general quality of life improvements.
 
 [**Check it out**](/projects/launch-my-dog/){: .btn .btn--info target="_blank"}
