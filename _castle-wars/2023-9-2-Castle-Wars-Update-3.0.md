@@ -29,19 +29,19 @@ After coming out of that stupor, I decided that I was going to implement 2 trans
 ## Steamworks
 LAN is something I wanted to add because it seems quick, and I had a lot of fun playing LAN Halo back in the day. It's also low-stakes for information exposure since people can only connect from your local network. Steamworks came from the decision that, this is going to be a Steam game first. If I end up DJ-Khaled-Suffering-from-Success, then I will put the work into porting this to Xbox, Playstation, and Switch/Switch 2. Steam also provides the Steam Relay service. The Relay acts as a mediator in a peer-to-peer system that masks all client's IPs so they can't be hacked, swatted, DDOSd, etc. Which means that it's considerably more secure.
 
-![relay-promo](/assets/images/castle-wars/update3/steamRelay.png){: .align-center}
+![relay-promo](/assets/images/castle-wars/update3/steamRelay.jpg){: .align-center}
 (I guess even the Steam Relay is something that I copied from Destiny 2)
 
 I downloaded the necessary assets from their respective GitHub pages, imported Steamworks into the project, and set the Steam ID as 480. [**Spacewar**](https://steamdb.info/app/480/charts/). I am going to have so many hours in Spacewar by the end of this. If you want to see how long I've spent, check my Steam profile and see if the spacewar hours have gone up.
 
-![spacewar-hours](/assets/images/castle-wars/update3/spacewarHours.png){: .align-center}
+![spacewar-hours](/assets/images/castle-wars/update3/spacewarHours.jpg){: .align-center}
 
 I'll be implementing LAN lobbies later, but for now, let's start doing the work.
 
 ## Lobby Browser
 I quickly threw together this browser UI, and the panel to create a game. Then I rigged up the controller support for it and wrote a quick function to generate random lobby info, to temporarily populate the server list. I also had to update the value select UI element to select from any type of variable, rather than just floats.
 
-![lobby-browser](/assets/images/castle-wars/update3/lobbyBrowser.png){: .align-center}
+![lobby-browser](/assets/images/castle-wars/update3/lobbyBrowser.jpg){: .align-center}
 
 I wrote a function that pulls lobby data for the Steam ID and populates the browser with it. Since this is a public steamID, we will get lobbies with weird, and often offensive names. I've seen lobbies named the N-word, the F-slur, the usual slew of  "boobsInXXX" "TitsLobby", and "assGame".
 
@@ -50,7 +50,7 @@ I can't control the results coming back yet (though that will be implemented), s
 ## Lobby Screen
 I also threw together a lobby screen, which allowed the owner to start the game, and showed a list of players in the game. To test, I got my old Razer Laptop, set up a company Steam profile, and loaded up the game to set up a lobby. I also made it so you can join lobbies from the browser, as well as see game metadata in the browser.
 
-![lobby-screen](/assets/images/castle-wars/update3/lobbyScreen.png){: .align-center}
+![lobby-screen](/assets/images/castle-wars/update3/lobbyScreen.jpg){: .align-center}
 
 The general setup of the lobby screen is that the owner can edit game settings and start the game, and everyone can see game settings, assign themselves to teams, and inspect players. Depending on the number of teams, different panels show the team lists. Either Free-for-all, 2 teams, 3 teams, or 4 teams. There a buttons to join/leave teams. 
 
