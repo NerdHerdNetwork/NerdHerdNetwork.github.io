@@ -72,7 +72,7 @@ I also followed the ECM2 examples to add in:
 - Swimming
 - Ladders
 
-![image-right](/assets/images/castle-wars/update1/trainingground.PNG){: .align-center}
+![image-right](/assets/images/castle-wars/update1/trainingground.jpg){: .align-center}
 
 I also needed a training map to help with testing all of this. I build a simple running around and jumping area along with:
 - Physics objects
@@ -92,7 +92,7 @@ The interaction system was easy, just periodically check what's directly in fron
 
 The basic UI was fun. Personally like making UI. Oh, how boring is that? It's true though. I made a basic progress bar showing the dash cooldown, and a panel showing how much oxygen the player has left (more on that later). The bottom left panel will be for abilities, and the bottom right for weapons. These might get combined later. There's also a dummy scoreboard and a health bar.
 
-![image-left](/assets/images/castle-wars/update1/BasicUI.PNG){: .align-center}
+![image-left](/assets/images/castle-wars/update1/BasicUI.jpg){: .align-center}
 
 Oh yes, the health system. I made a parent class called health, which allows any object to interact with another's health amount through functions. As well as things like enabling/disabling health regeneration, and if the object with the health dies. The player's health class controls the values for the health bar. The health bar fades out at full health, only showing if you have less than full health, and turns more and more red below the 40% threshold.
 
@@ -115,7 +115,7 @@ Speaking of game settings, we're gonna need something to manage them, I made an 
 
 The next set of systems I added in spawn points. I used to use UFPS and their spawn point system had an in-editor component that visually depicted where it was and where it was looking. I learned a good bit about how to use gizmos in the Unity editor and was able to achieve this in-editor-only effect, the only other parameter for spawn points is the team that can use it. Red, Blue, or No assignment. No assignment meaning either, this is for testing purposes. The death manager finds all available spawn points and sorts through them for the team it's trying to spawn. Later I'll add in other means of sorting like those with players near for spawncamping protection.
 
-![image-left](/assets/images/castle-wars/update1/spawnpoint.PNG){: .align-center}
+![image-left](/assets/images/castle-wars/update1/spawnpoint.jpg){: .align-center}
 
 I said that I'd talk more about swimming. When you're in the water you have an oxygen bar, it depletes after some time, with no oxygen, you slowly take damage, until you die. surfacing refills the whole oxygen bar. I wanted some way of conveying when the player takes damage other than just the health bar. I added this colored vignette effect that fades in/out when the player takes damage, it also turns green for gaining health, and blue for being underwater.
 
@@ -125,7 +125,7 @@ I've realized that the beginning stages of a project are just building the tools
 
 Now that there are a few systems, we need some small things that will populate the maps so that it's a little interesting... Man cannons, well I wanted to add these, but it looks like a lot of work, so they are being tabled for some time. Portals are in the game, well, more teleporters. They'll get you from point A to point B but aren't too fancy. These were baked into ECM2 and aren't the greatest.
 
-![image-right2](/assets/images/castle-wars/update1/teleporters.png){: .align-center}
+![image-right2](/assets/images/castle-wars/update1/teleporters.jpg){: .align-center}
 
 Ladders also baked into ECM2, also aren't the greatest. This ladder script was meant for a 3rd person game, so the walk forward control goes up and the walk backward control goes down, even when looking in other directions. Popping on/off ladders is weird. I sort of integrated ladders into the interactable system, but the interact range and the ladder range are different.
 
