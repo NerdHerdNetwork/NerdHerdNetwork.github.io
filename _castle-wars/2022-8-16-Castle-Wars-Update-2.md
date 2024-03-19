@@ -6,11 +6,11 @@ permalink: /castle-wars/sprint2/
 sidebar:
   nav: "castle-wars-nav"
 gallery:
-  - url: /assets/images/castle-wars/update2/Player.PNG
-    image_path: /assets/images/castle-wars/update2/Player.PNG
+  - url: /assets/images/castle-wars/update2/Player.jpg
+    image_path: /assets/images/castle-wars/update2/Player.jpg
     title: "Player Standing"
-  - url: /assets/images/castle-wars/update2/PlayerCrouched.PNG
-    image_path: /assets/images/castle-wars/update2/PlayerCrouched.PNG
+  - url: /assets/images/castle-wars/update2/PlayerCrouched.jpg
+    image_path: /assets/images/castle-wars/update2/PlayerCrouched.jpg
     title: "Player Crouched"
 ---
 
@@ -28,12 +28,12 @@ Okay, so Castle Wars: more like I took some classes, and a [**war started**](htt
 
 Epoch one starts in late 2021, like December 18th, or whenever the [**last DevLog**](https://www.youtube.com/watch?v=PfAUCvGBT7Y){:target="_blank"} was released. I was excited to keep working on the project. University was out for a break, and I had just started binging Gilmore Girls. The goal was to build out the second part of the trifecta: weapons. The trifecta is the gameplay loop of movement, weapons, and abilities. 
 
-![sword-image-right](/assets/images/castle-wars/update2/Sword.PNG){: .align-right width="40%"}
+![sword-image-right](/assets/images/castle-wars/update2/Sword.jpg){: .align-right width="40%"}
 First, I created the sword class, which is a container for damage values, ranges, lunge distances, and attack frequencies. I modeled one of the worst swords I’ve seen in a while, made a goofy little animation, and created all the UI for the sword. There are three attacks with cooldowns, an indicator of which one was recently hit, and a blocking indicator. 
 
 
 
-![enemy-image-left](/assets/images/castle-wars/update2/Enemy.PNG){: .align-left width="50%"}
+![enemy-image-left](/assets/images/castle-wars/update2/Enemy.jpg){: .align-left width="50%"}
 I went online and found a sound effect pack for melee combat, though I haven’t used it yet. I also added a sound for when you try to attack but the lockout from the previous attack is not over.
 So, we have a sword, now we need something to hit, right? I took a capsule with a red texture, slapped a name tag and a health bar on the top, made it rotate toward the player, and gave it a health component. 
 
@@ -43,7 +43,7 @@ Now there’s a sort of loop with the enemies: they're alive, they lose health, 
 
 To give the enemies a place to hang out, I tore down a wall, added terrain with some more water, and set up some spaces for future use. The one at the top is for the enemies to inhabit.
 
-![terrain-image-center](/assets/images/castle-wars/update2/Terrain.PNG){: .align-center}
+![terrain-image-center](/assets/images/castle-wars/update2/Terrain.jpg){: .align-center}
 
 Now we have a sword, and we have something to hit, how do we hit it? I watched a DevLog for [**Chivalry: Medieval Warfare**](https://www.youtube.com/embed/QXnGr-g07pI){:target="_blank"}, where the developers talked about having the sword swing, and just tracking what it collides with during the swing, and applying the damage to those objects. I follow roughly the same system.  I also added lunging, because the energy sword in Halo has lunging. This is accomplished by having a lunge trigger in front of the character and keeping track of if there are enemies in the trigger. If so, we decide which enemy to lunge towards (line of sight goes first, otherwise the closest in the trigger), and then the character gets lunged towards the enemy.
 
@@ -99,19 +99,19 @@ It inspired me to not only keep going but keep going in Unity. The video assured
 
 So here is the big design diagram:
 
-![Design-image-center](/assets/images/castle-wars/update2/DesignDiagram.png){: .align-center}
+![Design-image-center](/assets/images/castle-wars/update2/DesignDiagram.jpg){: .align-center}
 
 This looks scary, but it makes sense to me. It’s designed like a computer chip. This allows for me to have multiple local players, and have a server in a few different places. This also eliminates cross-talk between players, which allows me to have multiple players.
 
 This design allows me to abstract systems into modules, and not have to worry about how they work on the inside. It splits systems into modules. This way I can also re-use many of these systems in future games. I want you to pay close attention to two areas. First, the top-left section where I handle input, and secondly this middle-right bridge where the players interact with the game manager which interacts with the server. These are the two areas which I spent the most time on.
 
-![Design-image-center](/assets/images/castle-wars/update2/Focus1.png){: .align-center}
+![Design-image-center](/assets/images/castle-wars/update2/Focus1.jpg){: .align-center}
 
 Let’s focus on the Player-Manager-Server Model First. I realized pretty quickly that I needed to rip apart and re-design a lot of the player’s systems to make them able to be duplicated to allow for Split Screen and remove cross-talk. This is how I played Castle Wars in Halo: Reach with friends, so I wanted to build it into the game. When I say cross talk, I mean there's a situation: a component needs to reference a player, but the player doesn’t exist yet, so the player reference must be found when a player is spawned. Well, when we spawn multiple players, the references can get mixed up if Player A's component finds Player B, or vice versa, or both.
 
 The new player prefab contains a PlayerInput component and an input bootstrapper (we’ll get into those two later), as well as references to a child player prefab and UI Object. All the component references are settled with the prefab, and thus there is no need to find any of them. Instead of removing the player upon death, we now deactivate it so that the reference is not lost. I also combined all three UIs (HUD, Death Screen, Pause Screen) into one write-only system. The bootstrapper keeps track of the player’s state and tells the UI to change accordingly. 
 
-![Design-image-center](/assets/images/castle-wars/update2/Bootstrap.png){: .align-center}
+![Design-image-center](/assets/images/castle-wars/update2/Bootstrap.jpg){: .align-center}
 
 The game manager now holds an array of local players, as well as their UIs and Death Cameras. The game manager sets camera properties when players are spawned, which splits the screen, and orders the cameras correctly. The game manager also keeps track of per-player rendered things.
 
@@ -127,12 +127,12 @@ The game manager keeps track of the weapon models and name tags that need to be 
 
 The last component is the server. The server handles global game settings like: respawn times, per-team prefabs and death camera locations, spawn points, and health regen settings. It keeps track of networked objects and a list of players. The server also keeps track of respawn timers for players and tells the game manager when/where to spawn a given player. The next sprint is going to be networking, so much more server stuff will come next time.
 
-![Design-image-center](/assets/images/castle-wars/update2/Focus2.png){: .align-center}
+![Design-image-center](/assets/images/castle-wars/update2/Focus2.jpg){: .align-center}
 
 Okay, now let’s look at the other section I wanted to point out on the diagram: Input. I had to refactor all of this because hitting a button on one controller would propagate input to all players. My original solution-- keeping track of each player’s devices and validating input by checking on each character if the device belonged to the character-- didn’t work because then you could only press a button on one controller at a time, (two players couldn't jump or attack at the same time) which isn’t ideal. This is because all of the input still had to go through the input actions asset funnel. Similar to how you can't have two people enter a door at the same time, we can't have two controllers pressing the same button (or using the same stick) at the same time.
 One remnant of this original method was an input setup screen; you need multiple controllers for multiple players. Keyboard/Mouse is only active for the first player. Player 1 would control the menu, and the other players can pull up their settings.
 
-![inputscreen-image-center](/assets/images/castle-wars/update2/InputScreen.PNG){: .align-center}
+![inputscreen-image-center](/assets/images/castle-wars/update2/InputScreen.jpg){: .align-center}
 
 To solve the input validation problem, I bit the bullet and started using the PlayerInput component, which is a part of Unity's new input system. This takes a list of input mappings (actions asset) and signals events when the input maps are detected. It also can be assigned devices. If no devices are specified it still uses all devices. These events go to the input bootstrapper, which directs the input to either the UI or the character controller depending on the state of the player. So now, after a decent chunk of time, I have split screen!
 
