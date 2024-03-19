@@ -5,7 +5,7 @@ permalink: /poke-my-balls/
 header:
   overlay_color: "#000"
   overlay_filter: "0.45"
-  overlay_image: /assets/images/poke-my-balls/pmb-bg.png
+  overlay_image: /assets/images/poke-my-balls/pmb-bg.jpg
   actions:
     - label: "Download"
       url: "/poke-my-balls/#download-links"
