@@ -25,7 +25,7 @@ Based on the Halo: Reach game of the same name, Castle Wars is a game where two 
 
 ## Launch My Dog
 
-![logo-right](/assets/images/launch-my-dog/SE Screenshot 3.png){: .align-right height="45%" width="45%"}
+![logo-right](/assets/images/launch-my-dog/SE Screenshot 3.jpg){: .align-right height="45%" width="45%"}
 Launch My Dog is the hot-dog flinging physics-based puzzle game where you launch a hot dog into a bun, and things get in the way. Collect toppings, avoid ketchup, experience anti-gravity, and go through portals to get your hot dog into its hot dog bun.
 
 Launch My Dog officially started development in early 2020, and was released July 10th, 2021. It is a physics-based game built in Unity.

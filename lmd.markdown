@@ -5,7 +5,7 @@ permalink: /launch-my-dog/
 header:
   overlay_color: "#000"
   overlay_filter: "0.45"
-  overlay_image: /assets/images/launch-my-dog/splash-bg.png
+  overlay_image: /assets/images/launch-my-dog/splash-bg.jpg
   actions:
     - label: "Download"
       url: "/launch-my-dog/#download-links"
