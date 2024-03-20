@@ -24,7 +24,7 @@ I set out to add more animations, as well as improve the current ones to feel mu
 
 I figured my first step was to add arms. I had an arms model lying around from a NatureManufacturer asset I acquired in a humble bundle a while ago. I hope using it makes me feel less buyer's remorse.
 
-![arms-image-center](/assets/images/castle-wars/update2.3/arms.png){: .align-center}
+![arms-image-center](/assets/images/castle-wars/update2.3/arms.jpg){: .align-center}
 
 Unity has a package called 'Animation Rigging' which has a nice bone and Inverse Kinematics (IK) system, so I added that package and rigged the arms. It gives me these two target points for each arm that I can move to where I want the hands to be and the IK system will do the rest of the work for me.
 
@@ -47,7 +47,7 @@ The animations still weren't 100%, but maybe 40%. I'm sure this will not come ba
 
 Here is the layout of the Animation Controller. 
 
-![controller-image-center](/assets/images/castle-wars/update2.3/animatorController.png){: .align-center}
+![controller-image-center](/assets/images/castle-wars/update2.3/animatorController.jpg){: .align-center}
 
 The general layout is that any state (including the beginning state) can go to unsheathing, which then goes to idle. From idle, an attack can take place, the player can start blocking, or sheathe the sword.
 
