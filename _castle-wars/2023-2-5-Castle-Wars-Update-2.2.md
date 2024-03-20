@@ -18,7 +18,7 @@ I've been working on developing and improving the combat system (update out soon
 
 I don't like the idea of enemies following you all around the map right now. I am a generally lazy person and that would involve programming a NavMesh system and better AI for the enemies to allow jumping and sophisticated obstacle avoidance. To avoid all that work, I created a zone on the map in which the enemies are told it's okay to attack.
 
-![combat-zone-image-center](/assets/images/castle-wars/update2.2/CombatZone.png){: .align-center}
+![combat-zone-image-center](/assets/images/castle-wars/update2.2/CombatZone.jpg){: .align-center}
 
 ## Letting the enemies move
 
