@@ -16,7 +16,7 @@ I wanted to add settings and a settings menu to my game to enable accessibility 
 
 Quickly, this is the new main menu. I whipped it up because I got tired of looking at the default Unity skybox. The player devices panel has been moved to the top left. 
 
-![menu-image-center](/assets/images/castle-wars/update2.1/MainMenu.PNG){: .align-center}
+![menu-image-center](/assets/images/castle-wars/update2.1/MainMenu.jpg){: .align-center}
 
 Back to settings. I wrote a short list of which settings I wanted to add to the game. This list includes:
 - Field of View settings
@@ -45,7 +45,7 @@ Now we have a way of storing these values, how do we edit them? There are 3 plac
 
 Here is the main settings menu.
 
-![toggle-image-center](/assets/images/castle-wars/update2.1/SettingsMenu.PNG){: .align-center}
+![toggle-image-center](/assets/images/castle-wars/update2.1/SettingsMenu.jpg){: .align-center}
 
 I whipped up a settings menu in the main menu, which would edit Player 1's settings. I had to implement 2 new controller support UI elements
 
