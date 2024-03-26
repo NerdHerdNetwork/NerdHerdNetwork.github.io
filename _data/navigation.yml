@@ -86,6 +86,8 @@ castle-wars-nav:
     children:
       - title: "Demo Map 1: Planet"
         url: /castle-wars/planetmap/
+      - title: "Demo Map 2: Cruisers"
+        url: /castle-wars/cruisersmap/
 
 footer:
   links:
