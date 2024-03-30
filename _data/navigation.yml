@@ -88,6 +88,8 @@ castle-wars-nav:
         url: /castle-wars/planetmap/
       - title: "Demo Map 2: Cruisers"
         url: /castle-wars/cruisersmap/
+      - title: "Demo Map 3: Gravity Labs"
+        url: /castle-wars/gravitymap/
 
 footer:
   links:
