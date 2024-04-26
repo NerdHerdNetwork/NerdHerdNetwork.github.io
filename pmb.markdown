@@ -19,7 +19,7 @@ Poke My Balls is a fun, simple, and addicting game. If you can tap your screen y
 
 There are two other modes: Power Poking and Living by Poking
 - Power Poking: Along with falling balls are falling power-ups. There's a wall that blocks everything from falling, a bomb that clears the screen and a clock that slows time.
-- Living by Poking: Have you accrued some coins from playing the over modes? Spend them on lives that extend your play time. You can use 3 lives per game, which will allow you to get much higher scores.
+- Living by Poking: Have you accrued some coins from playing the over modes? Spend them on lives that extend your playtime. You can use 3 lives per game, which will allow you to get much higher scores.
 
 [**More info on the project page**](/projects/poke-my-balls/){:target="_blank" .btn .btn--info .align-center}
 

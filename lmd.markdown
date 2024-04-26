@@ -15,7 +15,7 @@ excerpt: "The hot-dog flinging physics-based puzzle game where you launch a hot 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z0nJEmJ8Ms8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ----
 
-Launch My Dog is the hot-dog flinging physics-based puzzle game where you launch a hot dog into a bun. I almost finished this game back in 2018 but felt that it wasn't good enough to release. It didn't feel fun. I came back to it in early 2020 and have been slowly working on it since. The goal is a tight small game that I can release on Mobile.
+Launch My Dog is the hot-dog flinging physics-based puzzle game where you launch a hot dog into a bun. Released July 2021.
 
 [**More info on the project page**](/projects/launch-my-dog/){:target="_blank" .btn .btn--info .align-center}
 
